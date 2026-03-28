@@ -38,7 +38,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <ScrollReveal direction="full">
             <h2 className="text-4xl font-display font-bold text-center text-foreground mb-12">
-              What We Stand For
+              Text goes here
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -79,16 +79,16 @@ const Index = () => {
       >
         <div className="text-center px-6">
           <h2 className="text-4xl font-display font-bold text-foreground mb-4">
-            Join the Movement
+            Text goes here
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-6">
-            Together we can make a difference for our planet.
+            Text goes here.
           </p>
           <a
             href="/credits"
             className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop"
           >
-            Get Involved
+            Text goes here
           </a>
         </div>
       </ParallaxSection>
