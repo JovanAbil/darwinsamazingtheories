@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Link } from "react-router-dom";
 
 /* =============================================
  * PAGE 5 — TIMELINE / VERTICAL FLOW
@@ -21,11 +22,11 @@ const Page5 = () => {
         <ScrollReveal direction="full">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             {/* EDIT: Page title */}
-            The Process
+            Text goes here
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             {/* EDIT: Page description */}
-            Follow our journey step by step, from vision to reality.
+            Text goes here
           </p>
         </ScrollReveal>
 
@@ -34,16 +35,15 @@ const Page5 = () => {
           <div className="max-w-2xl">
             <span className="text-primary font-bold text-sm uppercase tracking-wider">
               {/* EDIT: Step label */}
-              Step 1
+              Text goes here
             </span>
             <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
               {/* EDIT: Step heading */}
-              Research & Discovery
+              Text goes here
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Step description */}
-              We begin by studying local ecosystems and identifying areas where
-              our efforts can have the greatest positive impact.
+              Text goes here
             </p>
           </div>
         </ScrollReveal>
@@ -52,10 +52,10 @@ const Page5 = () => {
         <ScrollReveal direction="right">
           <div className="max-w-2xl ml-auto text-right">
             <span className="text-primary font-bold text-sm uppercase tracking-wider">
-              Step 2
+              Text goes here
             </span>
             <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
-              Planning & Design
+              Text goes here
             </h2>
             {/* EDIT: Replace image */}
             <img
@@ -74,11 +74,10 @@ const Page5 = () => {
               Step 3
             </span>
             <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
-              Implementation
+              Text goes here
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              With plans in place, we work alongside communities to bring
-              sustainable projects to life through hands-on collaboration.
+              Text goes here
             </p>
           </div>
         </ScrollReveal>
@@ -100,17 +99,16 @@ const Page5 = () => {
           <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
             <h2 className="text-3xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Conclusion heading */}
-              The Journey Continues
+              Text goes here
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               {/* EDIT: Conclusion text */}
-              Every step forward brings us closer to a sustainable future.
-              Join us in making a lasting difference.
+              Text goes here
             </p>
-            <a href="/credits" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
+            <Link to="/credits" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
               {/* EDIT: Button text and href */}
               Learn More →
-            </a>
+            </Link>
           </div>
         </ScrollReveal>
 
