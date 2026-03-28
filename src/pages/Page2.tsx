@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Link } from "react-router-dom";
 
 /* =============================================
  * PAGE 2 — GALLERY LAYOUT
@@ -21,11 +22,11 @@ const Page2 = () => {
         <ScrollReveal direction="full">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             {/* EDIT: Page title */}
-            Gallery
+            Text goes here
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             {/* EDIT: Page description */}
-            A collection of images showcasing the beauty of our natural world.
+            Text goes here
           </p>
         </ScrollReveal>
 
@@ -39,7 +40,7 @@ const Page2 = () => {
               className="rounded-lg hover-pop w-full"
               style={{ height: "300px", objectFit: "cover" }}
             />
-            <p className="text-sm text-muted-foreground mt-2">Golden hour in the mountains</p>
+            <p className="text-sm text-muted-foreground mt-2">Text goes here</p>
           </ScrollReveal>
           <ScrollReveal direction="right">
             {/* EDIT: Replace image and caption */}
@@ -49,7 +50,7 @@ const Page2 = () => {
               className="rounded-lg hover-pop w-full"
               style={{ height: "300px", objectFit: "cover" }}
             />
-            <p className="text-sm text-muted-foreground mt-2">Meadows stretching to the horizon</p>
+            <p className="text-sm text-muted-foreground mt-2">Text goes here</p>
           </ScrollReveal>
         </div>
 
@@ -66,7 +67,7 @@ const Page2 = () => {
           </div>
           <p className="text-muted-foreground mt-4 text-center text-lg">
             {/* EDIT: Caption for the feature image */}
-            Morning mist settling over a peaceful valley
+            Text goes here
           </p>
         </ScrollReveal>
 
@@ -76,22 +77,22 @@ const Page2 = () => {
             <div className="bg-card rounded-lg p-5 border border-border hover-pop">
               {/* EDIT: Replace image, title, description */}
               <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Forest Canopy</h3>
-              <p className="text-muted-foreground text-sm">An aerial perspective of untouched woodland.</p>
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
+              <p className="text-muted-foreground text-sm">Text goes here</p>
             </div>
           </ScrollReveal>
           <ScrollReveal direction="full">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop">
               <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop" alt="Waterfall in forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Hidden Waterfall</h3>
-              <p className="text-muted-foreground text-sm">A cascading waterfall deep in the wilderness.</p>
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
+              <p className="text-muted-foreground text-sm">Text goes here</p>
             </div>
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop">
               <img src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop" alt="Close-up of green leaves" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Leaf Detail</h3>
-              <p className="text-muted-foreground text-sm">The intricate beauty found in every leaf.</p>
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
+              <p className="text-muted-foreground text-sm">Text goes here</p>
             </div>
           </ScrollReveal>
         </div>
