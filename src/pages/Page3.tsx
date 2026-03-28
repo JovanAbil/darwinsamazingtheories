@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxSection from "@/components/ParallaxSection";
+import { Link } from "react-router-dom";
 
 /* =============================================
  * PAGE 3 — STORYTELLING LAYOUT
@@ -23,11 +24,11 @@ const Page3 = () => {
           <ScrollReveal direction="full">
             <h1 className="text-4xl font-display font-bold text-foreground mb-4">
               {/* EDIT: Page title */}
-              Our Story
+              Text goes here
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl">
               {/* EDIT: Page intro */}
-              A journey through the landscapes and ideas that inspire us.
+              Text goes here
             </p>
           </ScrollReveal>
         </div>
@@ -38,16 +39,15 @@ const Page3 = () => {
             <ScrollReveal direction="left" className="flex-1">
               <h2 className="text-3xl font-display font-bold text-foreground mb-4">
                 {/* EDIT: Section heading */}
-                Where It Began
+               Text goes here
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                 {/* EDIT: Section text */}
-                Every great journey starts with a single step. Ours began with a
-                simple question: how can we better protect the world around us?
+                Text goes here
               </p>
-              <a href="/page-1" className="bio-link">
-                Read more →
-              </a>
+              <Link to="/page-1" className="bio-link">
+                Text goes here
+              </Link>
             </ScrollReveal>
             <ScrollReveal direction="right" className="flex-1">
               {/* EDIT: Replace image */}
@@ -70,11 +70,11 @@ const Page3 = () => {
           <div className="text-center px-6">
             <h2 className="text-3xl font-display font-bold text-foreground mb-2">
               {/* EDIT: Parallax heading */}
-              Nature Speaks
+              Text goes here
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto">
               {/* EDIT: Parallax subtext */}
-              If we listen closely enough, every ecosystem has a story to tell.
+              Text goes here
             </p>
           </div>
         </ParallaxSection>
@@ -85,12 +85,11 @@ const Page3 = () => {
             <ScrollReveal direction="right" className="flex-1">
               <h2 className="text-3xl font-display font-bold text-foreground mb-4">
                 {/* EDIT: Section heading */}
-                Growing Together
+                Text goes here
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 {/* EDIT: Section text */}
-                Community action drives lasting change. By working together, we
-                amplify our impact and create a healthier planet for all.
+                Text goes here
               </p>
             </ScrollReveal>
             <ScrollReveal direction="left" className="flex-1">
