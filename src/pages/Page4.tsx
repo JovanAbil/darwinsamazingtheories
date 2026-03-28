@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Link } from "react-router-dom";
 
 /* =============================================
  * PAGE 4 — FEATURE SHOWCASE
@@ -20,11 +21,11 @@ const Page4 = () => {
         <ScrollReveal direction="full">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             {/* EDIT: Page title */}
-            Key Features
+            Text goes here
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             {/* EDIT: Page description */}
-            Highlighting the initiatives and ideas that drive our mission forward.
+            Text goes here
           </p>
         </ScrollReveal>
 
@@ -33,13 +34,11 @@ const Page4 = () => {
           <div className="bg-accent/30 border border-border rounded-xl p-8 hover-pop">
             <h2 className="text-2xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Highlight heading */}
-              Our Commitment
+              Text goes here
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Highlight text */}
-              We are dedicated to creating sustainable solutions that benefit both
-              communities and the environment. Every project we undertake is guided
-              by science and compassion.
+              Text goes here
             </p>
           </div>
         </ScrollReveal>
@@ -53,11 +52,11 @@ const Page4 = () => {
               <div className="p-6">
                 <h3 className="font-display font-bold text-xl text-foreground mb-2">
                   {/* EDIT: Card title */}
-                  Reforestation
+                  Text goes here
                 </h3>
                 <p className="text-muted-foreground">
                   {/* EDIT: Card description */}
-                  Planting native trees to restore degraded landscapes and support local wildlife.
+                  Text goes here
                 </p>
               </div>
             </div>
@@ -67,10 +66,10 @@ const Page4 = () => {
               <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&h=280&fit=crop" alt="Waterfall in nature" className="w-full" style={{ height: "220px", objectFit: "cover" }} />
               <div className="p-6">
                 <h3 className="font-display font-bold text-xl text-foreground mb-2">
-                  Water Conservation
+                  Text goes here
                 </h3>
                 <p className="text-muted-foreground">
-                  Protecting freshwater sources and promoting responsible water use in communities.
+                  Text goes here
                 </p>
               </div>
             </div>
@@ -92,12 +91,11 @@ const Page4 = () => {
             <div className="max-w-3xl">
               <h2 className="text-2xl font-display font-bold text-foreground mb-3">
                 {/* EDIT: Heading */}
-                Looking Ahead
+                Text goes here
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 {/* EDIT: Description */}
-                The image fades in first, then this text slides in from the left
-                as you continue scrolling — creating a layered storytelling effect.
+                Text goes here
               </p>
             </div>
           </ScrollReveal>
