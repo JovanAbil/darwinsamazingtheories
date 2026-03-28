@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Link } from "react-router-dom";
 
 /* =============================================
  * PAGE 1 — COMPREHENSIVE EXAMPLES
@@ -33,11 +34,11 @@ const Page1 = () => {
         <ScrollReveal direction="full">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             {/* EDIT: Change this title */}
-            Exploring Nature
+            Text goes here
           </h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
             {/* EDIT: Change this description */}
-            Discover the wonders of the natural world through images, videos, and stories.
+            Text goes here.
           </p>
         </ScrollReveal>
 
@@ -46,13 +47,11 @@ const Page1 = () => {
           <div className="max-w-3xl">
             <h2 className="text-2xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Your heading */}
-              The Living World
+              Text goes here
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Your paragraph text */}
-              From the deepest oceans to the highest peaks, life finds a way to thrive
-              in every corner of our planet. Each ecosystem tells a unique story of
-              adaptation and resilience.
+              Text goes here
             </p>
           </div>
         </ScrollReveal>
@@ -68,7 +67,7 @@ const Page1 = () => {
           />
           <p className="text-sm text-muted-foreground mt-2 italic">
             {/* EDIT: Image caption */}
-            A forest canopy bathed in golden sunlight
+            Text goes here
           </p>
         </ScrollReveal>
 
@@ -78,12 +77,11 @@ const Page1 = () => {
           <ScrollReveal direction="left" className="flex-1">
             <h2 className="text-2xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Your heading */}
-              Biodiversity Matters
+              Text goes here
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Your text */}
-              Every species plays a role in the delicate balance of our ecosystems.
-              Protecting biodiversity means protecting our future.
+              Text goes here
             </p>
           </ScrollReveal>
           <ScrollReveal direction="right" className="flex-1">
@@ -111,10 +109,10 @@ const Page1 = () => {
         {/* ============ LINK EXAMPLE — fades in ============ */}
         <ScrollReveal direction="full">
           <p className="text-muted-foreground text-center">
-            Want to learn more? Visit{" "}
-            <a href="/page-2" className="bio-link">Page 2</a>
+            Text goes here. Want to learn more? Visit{" "}
+            <Link to="/page-2" className="bio-link">Page 2</a>
             {" "}or check out the{" "}
-            <a href="/credits" className="bio-link">Credits</a>.
+            <Link to="/credits" className="bio-link">Credits</a>.
           </p>
         </ScrollReveal>
 
