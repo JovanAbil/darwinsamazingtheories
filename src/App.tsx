@@ -22,12 +22,12 @@ const App = () => (
       <BrowserRouter basename="/darwinsamazingtheories">
         <Routes>
           <Route path="/darwinsamazingtheories/" element={<Index />} />
-          <Route path="/page-1" element={<Page1 />} />
-          <Route path="/page-2" element={<Page2 />} />
-          <Route path="/page-3" element={<Page3 />} />
-          <Route path="/page-4" element={<Page4 />} />
-          <Route path="/page-5" element={<Page5 />} />
-          <Route path="/credits" element={<Credits />} />
+          <Route path="/darwinsamazingtheories/page-1" element={<Page1 />} />
+          <Route path="/darwinsamazingtheories/page-2" element={<Page2 />} />
+          <Route path="/darwinsamazingtheories/page-3" element={<Page3 />} />
+          <Route path="/darwinsamazingtheories/page-4" element={<Page4 />} />
+          <Route path="/darwinsamazingtheories/page-5" element={<Page5 />} />
+          <Route path="/darwinsamazingtheories/credits" element={<Credits />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
