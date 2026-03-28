@@ -1,6 +1,7 @@
 import { Home, FileText, Heart } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import { useLocation, Link } from "react-router-dom";
 import {
   Sidebar,
   SidebarContent,
@@ -37,21 +38,17 @@ export function AppSidebar() {
             <SidebarMenu>
               {navigationItems.map((item) => {
                 const Icon = iconMap[item.icon] || FileText;
-                const isActive = location.pathname === item.href;
+                const isActive = location.pathname.endsWith(item.href);
                 return (
                   <SidebarMenuItem key={item.href}>
                     <SidebarMenuButton asChild>
-                      <a
-                        href={item.href}
-                        className={`flex items-center gap-2 rounded-md px-3 py-2 transition-colors ${
-                          isActive
-                            ? "bg-accent text-accent-foreground font-medium"
-                            : "hover:bg-muted"
-                        }`}
+                      <Link
+                        to={item.href}
+                        className="..."
                       >
                         <Icon className="h-4 w-4 shrink-0" />
                         {!collapsed && <span>{item.title}</span>}
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 );
