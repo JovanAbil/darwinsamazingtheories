@@ -1,7 +1,7 @@
 import { Home, FileText, Heart } from "lucide-react";
-import { useLocation } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
 import { useLocation, Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
+
 import {
   Sidebar,
   SidebarContent,
@@ -44,7 +44,11 @@ export function AppSidebar() {
                     <SidebarMenuButton asChild>
                       <Link
                         to={item.href}
-                        className="..."
+                        className={`flex items-center gap-2 rounded-md px-3 py-2 transition-colors ${
+                        isActive
+                          ? "bg-accent text-accent-foreground font-medium"
+                          : "hover:bg-muted"
+                      }`}
                       >
                         <Icon className="h-4 w-4 shrink-0" />
                         {!collapsed && <span>{item.title}</span>}
