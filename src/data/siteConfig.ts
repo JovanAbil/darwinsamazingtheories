@@ -7,10 +7,10 @@
  */
 
 export const siteConfig = {
-  name: "BioSphere",
-  description: "Exploring the beauty of life and nature",
-  author: "Your Name",
-  contactEmail: "contact@example.com",
+  name: "Text goes here",
+  description: "Text goes here",
+  author: "Jovan Abilash & Lucas Brown",
+  contactEmail: "abilash.jovan@charterschool.org or brown.lucascharterschool.org",
   dateCreated: "2026-03-27",
   counterDevId: "", // Add your counter.dev ID here. Get one at https://counter.dev
 };
