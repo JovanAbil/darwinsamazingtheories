@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="flex-1 flex flex-col min-w-0 overflow-x-hidden">
           <header className="h-14 flex items-center border-b bg-card/80 backdrop-blur-sm sticky top-0 z-50">
             <SidebarTrigger className="ml-3" />
-            <span className="ml-3 font-display font-bold text-lg text-foreground">BioSphere</span>
+            <span className="ml-3 font-display font-bold text-lg text-foreground">Text goes here</span>
           </header>
           <main className="flex-1">{children}</main>
           <Footer />
