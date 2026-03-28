@@ -46,7 +46,7 @@ const ScrollReveal = ({ children, direction, className = "" }: ScrollRevealProps
   const stateClass = state === "visible" ? "visible" : state === "hidden-exit" ? "hidden-exit" : "";
 
   return (
-    <div ref={ref} className={`${baseClass} ${stateClass} hover-pop ${className}`}>
+    <div ref={ref} className={`${baseClass} ${stateClass} ${className}`}>
       {children}
     </div>
   );

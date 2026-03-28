@@ -204,8 +204,18 @@ See `docs/POPUPS_GUIDE.md` for full details. Uses the built-in Dialog component.
 
 ## Adding & Removing Pages
 
+### Current Pages
+The project ships with 5 template pages (Page1–Page5), each with a different layout style:
+- **Page 1** — Comprehensive examples (text, images, side-by-side, links)
+- **Page 2** — Gallery layout (grids, cards, feature images)
+- **Page 3** — Storytelling (alternating text+image rows, parallax divider)
+- **Page 4** — Feature showcase (accent cards, stacked sections)
+- **Page 5** — Timeline / vertical flow (step-by-step with alternating directions)
+
+You can rename, edit, or remove any of these. The content is self-contained in each file.
+
 ### Add a New Page
-1. **Create the file** — Copy any existing page template (e.g., `src/pages/Page1.tsx`) and rename it:
+1. **Create the file** — Copy any existing page (e.g., `src/pages/Page1.tsx`) and rename it:
    ```tsx
    // src/pages/MyNewPage.tsx
    import Layout from "@/components/Layout";
@@ -217,6 +227,7 @@ See `docs/POPUPS_GUIDE.md` for full details. Uses the built-in Dialog component.
          <ScrollReveal direction="full">
            <h1 className="text-4xl font-display font-bold text-foreground">My New Page</h1>
          </ScrollReveal>
+         {/* Add your content sections here — copy blocks from any template page */}
        </div>
      </Layout>
    );
