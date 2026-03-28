@@ -22,11 +22,11 @@ export interface NavItem {
 }
 
 export const navigationItems: NavItem[] = [
-  { title: "Home", href: "/", icon: "Home", description: "Main landing page" },
-  { title: "Page 1", href: "/page-1", icon: "FileText", description: "Comprehensive examples" },
-  { title: "Page 2", href: "/page-2", icon: "FileText", description: "Gallery layout" },
-  { title: "Page 3", href: "/page-3", icon: "FileText", description: "Storytelling layout" },
-  { title: "Page 4", href: "/page-4", icon: "FileText", description: "Feature showcase" },
-  { title: "Page 5", href: "/page-5", icon: "FileText", description: "Timeline / vertical flow" },
+  { title: "Home", href: "/", icon: "Home", description: "Text goes here" },
+  { title: "Page 1", href: "/page-1", icon: "FileText", description: "Text goes here" },
+  { title: "Page 2", href: "/page-2", icon: "FileText", description: "Text goes here" },
+  { title: "Page 3", href: "/page-3", icon: "FileText", description: "Text goes here" },
+  { title: "Page 4", href: "/page-4", icon: "FileText", description: "Text goes here" },
+  { title: "Page 5", href: "/page-5", icon: "FileText", description: "Text goes here" },
   { title: "Credits", href: "/credits", icon: "Heart", description: "Credits and attributions" },
 ];
