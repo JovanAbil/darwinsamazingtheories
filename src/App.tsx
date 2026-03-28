@@ -21,7 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter basename="/darwinsamazingtheories">
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/darwinsamazingtheories/" element={<Index />} />
           <Route path="/page-1" element={<Page1 />} />
           <Route path="/page-2" element={<Page2 />} />
           <Route path="/page-3" element={<Page3 />} />
