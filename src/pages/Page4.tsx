@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
-
+import PageHeader from "@/components/PageHeader";
 /* =============================================
  * PAGE 4 — FEATURE SHOWCASE
  * =============================================
@@ -14,19 +14,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 const Page4 = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-6 py-20 space-y-16">
+      {/* EDIT: Change imageUrl, title, and description */}
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&h=900&fit=crop"
+        title="Key Features"
+        description="Highlighting the initiatives and ideas that drive our mission forward."
+      />
 
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            Key Features
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            Highlighting the initiatives and ideas that drive our mission forward.
-          </p>
-        </ScrollReveal>
+      <div className="container mx-auto px-6 py-16 space-y-16">
 
         {/* ============ ACCENT HIGHLIGHT CARD — fades in ============ */}
         <ScrollReveal direction="full">

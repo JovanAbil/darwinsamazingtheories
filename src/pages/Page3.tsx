@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxSection from "@/components/ParallaxSection";
-
+import PageHeader from "@/components/PageHeader";
 /* =============================================
  * PAGE 3 — STORYTELLING LAYOUT
  * =============================================
@@ -18,19 +18,12 @@ const Page3 = () => {
     <Layout>
       <div className="space-y-0">
 
-        {/* ============ PAGE HEADER ============ */}
-        <div className="container mx-auto px-6 pt-20 pb-10">
-          <ScrollReveal direction="full">
-            <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-              {/* EDIT: Page title */}
-              Our Story
-            </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl">
-              {/* EDIT: Page intro */}
-              A journey through the landscapes and ideas that inspire us.
-            </p>
-          </ScrollReveal>
-        </div>
+        {/* EDIT: Change imageUrl, title, and description */}
+        <PageHeader
+          imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
+          title="Our Story"
+          description="A journey through the landscapes and ideas that inspire us."
+        />
 
         {/* ============ ROW 1: TEXT LEFT, IMAGE RIGHT ============ */}
         <div className="container mx-auto px-6 py-10">

@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
-
+import PageHeader from "@/components/PageHeader";
 /* =============================================
  * PAGE 2 — GALLERY LAYOUT
  * =============================================
@@ -15,19 +15,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 const Page2 = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-6 py-20 space-y-16">
+      {/* EDIT: Change imageUrl, title, and description */}
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop"
+        title="Gallery"
+        description="A collection of images showcasing the beauty of our natural world."
+      />
 
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            Gallery
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            A collection of images showcasing the beauty of our natural world.
-          </p>
-        </ScrollReveal>
+      <div className="container mx-auto px-6 py-16 space-y-16">
 
         {/* ============ TWO-COLUMN IMAGE GRID ============ */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
-
+import PageHeader from "@/components/PageHeader";
 /* =============================================
  * PAGE 5 — TIMELINE / VERTICAL FLOW
  * =============================================
@@ -15,19 +15,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 const Page5 = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-6 py-20 space-y-20">
+      {/* EDIT: Change imageUrl, title, and description */}
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1600&h=900&fit=crop"
+        title="The Process"
+        description="Follow our journey step by step, from vision to reality."
+      />
 
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            The Process
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            Follow our journey step by step, from vision to reality.
-          </p>
-        </ScrollReveal>
+      <div className="container mx-auto px-6 py-16 space-y-20">
 
         {/* ============ STEP 1 — slides from LEFT ============ */}
         <ScrollReveal direction="left">
