@@ -4,8 +4,9 @@ import type { ReactNode } from "react";
  * PAGE HEADER — PARALLAX TITLE SECTION
  * =============================================
  * Displays a parallax background image behind the
- * page title and description. The effect ends where
- * the first content section begins.
+ * page title and description. The image scrolls at
+ * a different pace (fixed attachment) creating a
+ * "window" effect — just like the hero on the home page.
  *
  * EDIT: Change imageUrl to your own image path.
  *       e.g. imageUrl="/images/my-header.jpg"
@@ -24,16 +25,17 @@ interface PageHeaderProps {
 
 const PageHeader = ({ imageUrl, title, description, children }: PageHeaderProps) => {
   return (
-    <div className="relative overflow-hidden">
-      {/* Parallax background — fixed attachment creates the scroll effect */}
-      <div
-        className="absolute inset-0 parallax-bg"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      />
-      {/* Overlay for readability */}
-      <div className="absolute inset-0 bg-background/70 backdrop-blur-[3px]" />
+    <div
+      className="parallax-bg relative flex items-center justify-center"
+      style={{
+        backgroundImage: `url(${imageUrl})`,
+        minHeight: "45vh",
+      }}
+    >
+      {/* Semi-transparent overlay for readability */}
+      <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px]" />
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-20 pb-16">
+      <div className="relative z-10 container mx-auto px-6 py-16">
         <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 animate-fade-in">
           {title}
         </h1>
