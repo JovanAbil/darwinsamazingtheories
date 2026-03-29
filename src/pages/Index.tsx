@@ -14,7 +14,7 @@ const Index = () => {
     <Layout>
       {/* Hero with parallax */}
       <ParallaxSection
-        imageUrl="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=1600&h=900&fit=crop"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
         height="80vh"
       >
         <div className="text-center px-6">
