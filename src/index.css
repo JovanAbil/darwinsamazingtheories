@@ -115,12 +115,7 @@
 }
 
 @layer components {
-  .parallax-bg {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* parallax effect is now handled via JS in ParallaxSection and PageHeader */
 
   .bio-link {
     @apply text-primary underline-offset-4 decoration-primary/40 hover:decoration-primary transition-all duration-300;
