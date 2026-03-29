@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 import ParallaxSection from "@/components/ParallaxSection";
+import PageHeader from "@/components/PageHeader";
 import { Link } from "react-router-dom";
 
 /* =============================================
@@ -17,6 +18,11 @@ import { Link } from "react-router-dom";
 const Page3 = () => {
   return (
     <Layout>
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
+        title="Text goes here"
+        description="Text goes here"
+      />
       <div className="space-y-0">
 
         {/* ============ PAGE HEADER ============ */}
@@ -69,11 +75,9 @@ const Page3 = () => {
         >
           <div className="text-center px-6">
             <h2 className="text-3xl font-display font-bold text-foreground mb-2">
-              {/* EDIT: Parallax heading */}
               Text goes here
             </h2>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-              {/* EDIT: Parallax subtext */}
               Text goes here
             </p>
           </div>
