@@ -35,7 +35,7 @@ export interface ContentBlock {
 export const heroContent = {
   heading: "Text goes here",
   subheading: "Text goes here",
-  ctaText: "Credits",
+  ctaText: "Claims",
   ctaLink: "#claims",
 };
 
