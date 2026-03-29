@@ -12,9 +12,9 @@ const claimIconMap: Record<string, React.ComponentType<{ className?: string }>> 
 const Index = () => {
   return (
     <Layout>
-      {/* Hero with parallax */}
+    {/* Hero with parallax */}
       <ParallaxSection
-        imageUrl="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=1600&h=900&fit=crop"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
         height="80vh"
       >
         <div className="text-center px-6">
@@ -79,16 +79,16 @@ const Index = () => {
       >
         <div className="text-center px-6">
           <h2 className="text-4xl font-display font-bold text-foreground mb-4">
-            Text goes here
+            Join the Movement
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-6">
-            Text goes here.
+            Together we can make a difference for our planet.
           </p>
           <a
             href="/credits"
             className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop"
           >
-            Text goes here
+            Get Involved
           </a>
         </div>
       </ParallaxSection>
