@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import PageHeader from "@/components/PageHeader";
 import { Link } from "react-router-dom";
 
 /* =============================================
@@ -28,6 +29,11 @@ import { Link } from "react-router-dom";
 const Page1 = () => {
   return (
     <Layout>
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
+        title="Text goes here"
+        description="Text goes here"
+      />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
         {/* ============ PAGE TITLE — fades in ============ */}
