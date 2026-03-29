@@ -5,7 +5,7 @@ interface ParallaxSectionProps {
   children?: ReactNode;
   height?: string;
   overlay?: boolean;
-  /** Speed factor: 0 = fixed, 0.5 = half scroll speed (default), 1 = normal */
+  /** Background speed factor: 0 = strongest parallax, 1 = no parallax */
   speed?: number;
 }
 
@@ -24,18 +24,39 @@ const ParallaxSection = ({
     const image = imageRef.current;
     if (!container || !image) return;
 
-    const handleScroll = () => {
+    const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
+    let ticking = false;
+
+    const updateParallax = () => {
       const rect = container.getBoundingClientRect();
       const windowH = window.innerHeight;
       // Only animate when visible
-      if (rect.bottom < 0 || rect.top > windowH) return;
-      const offset = rect.top * speed;
-      image.style.transform = `translateY(${offset}px)`;
+      if (rect.bottom < 0 || rect.top > windowH) {
+        ticking = false;
+        return;
+      }
+
+      const maxOffset = rect.height * 0.2;
+      const rawOffset = -rect.top * (1 - speed);
+      const offset = clamp(rawOffset, -maxOffset, maxOffset);
+      image.style.transform = `translate3d(0, ${offset}px, 0) scale(1.08)`;
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(updateParallax);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // initial position
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    updateParallax();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, [speed]);
 
   return (
@@ -47,17 +68,17 @@ const ParallaxSection = ({
       {/* Parallax image layer — oversized to allow movement */}
       <div
         ref={imageRef}
-        className="absolute inset-0 will-change-transform"
+        className="absolute inset-0 will-change-transform pointer-events-none"
         style={{
           backgroundImage: `url(${imageUrl})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          top: "-20%",
-          bottom: "-20%",
+          top: "-30%",
+          bottom: "-30%",
         }}
       />
-      {overlay && <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px]" />}
+      {overlay && <div className="absolute inset-0 bg-background/35 backdrop-blur-[1px]" />}
       <div className="relative z-10 w-full">{children}</div>
     </div>
   );
