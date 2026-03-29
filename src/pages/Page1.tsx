@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
-
+import PageHeader from "@/components/PageHeader";
 /* =============================================
  * PAGE 1 — COMPREHENSIVE EXAMPLES
  * =============================================
@@ -27,19 +27,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 const Page1 = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-6 py-20 space-y-16">
+      {/* EDIT: Change imageUrl, title, and description */}
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
+        title="Exploring Nature"
+        description="Discover the wonders of the natural world through images, videos, and stories."
+      />
 
-        {/* ============ PAGE TITLE — fades in ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Change this title */}
-            Exploring Nature
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Change this description */}
-            Discover the wonders of the natural world through images, videos, and stories.
-          </p>
-        </ScrollReveal>
+      <div className="container mx-auto px-6 py-16 space-y-16">
 
         {/* ============ TEXT BLOCK — slides from LEFT ============ */}
         <ScrollReveal direction="left">
