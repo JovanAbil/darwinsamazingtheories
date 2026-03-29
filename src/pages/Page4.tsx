@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import PageHeader from "@/components/PageHeader";
 import { Link } from "react-router-dom";
 
 /* =============================================
@@ -15,6 +16,11 @@ import { Link } from "react-router-dom";
 const Page4 = () => {
   return (
     <Layout>
+      <PageHeader
+        imageUrl="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&h=900&fit=crop"
+        title="Text goes here"
+        description="Text goes here"
+      />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
         {/* ============ PAGE TITLE ============ */}
