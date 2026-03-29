@@ -24,11 +24,12 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in">
             {heroContent.subheading}
           </p>
-          <Link to={heroContent.ctaLink}
+          <a 
+            href={heroContent.ctaLink}
             className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop text-lg"
           >
             {heroContent.ctaText}
-          </Link>
+          </a>
         </div>
       </ParallaxSection>
 
