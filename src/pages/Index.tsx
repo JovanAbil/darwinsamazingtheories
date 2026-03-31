@@ -1,4 +1,5 @@
 import { Leaf, Trees, Sun, Mountain, Users } from "lucide-react";
+import { Link } from "react-router-dom";  // ← added this import
 import Layout from "@/components/Layout";
 import ParallaxSection from "@/components/ParallaxSection";
 import ContentBlock from "@/components/ContentBlock";
@@ -12,7 +13,7 @@ const claimIconMap: Record<string, React.ComponentType<{ className?: string }>> 
 const Index = () => {
   return (
     <Layout>
-    {/* Hero with parallax */}
+      {/* Hero with parallax */}
       <ParallaxSection
         imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
         height="80vh"
@@ -24,7 +25,7 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in">
             {heroContent.subheading}
           </p>
-          <a 
+          
             href={heroContent.ctaLink}
             className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop text-lg"
           >
@@ -45,10 +46,7 @@ const Index = () => {
             {claims.map((claim, i) => {
               const Icon = claimIconMap[claim.icon] || Leaf;
               return (
-                <ScrollReveal
-                  key={claim.id}
-                  direction={i % 2 === 0 ? "left" : "right"}
-                >
+                <ScrollReveal key={claim.id} direction={i % 2 === 0 ? "left" : "right"}>
                   <div className="bg-card rounded-lg p-6 text-center shadow-sm hover-pop border border-border overflow-hidden">
                     <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/50 flex items-center justify-center">
                       <Icon className="h-6 w-6 text-primary" />
@@ -86,24 +84,28 @@ const Index = () => {
           </p>
         </div>
       </ParallaxSection>
-    <div>
-      <ScrollReveal direction="full">
-          <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
-            <h2 className="text-3xl font-display font-bold text-foreground mb-3">
-              {/* EDIT: Conclusion heading */}
-              Text goes here
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              {/* EDIT: Conclusion text */}
-              Text goes here
-            </p>
-            <Link to="/page-1" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
-                {/* EDIT: Button text and href */}
+
+      {/* Conclusion — moved into a proper section with container */}
+      <section className="py-20">  {/* ← was a bare <div>, now a proper <section> */}
+        <div className="container mx-auto px-6">  {/* ← added container wrapper */}
+          <ScrollReveal direction="full">
+            <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
+              <h2 className="text-3xl font-display font-bold text-foreground mb-3">
+                Text goes here
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Text goes here
+              </p>
+              <Link
+                to="/page-1"
+                className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop"
+              >
                 Go to Page 1 →
-            </Link>
-          </div>
-        </ScrollReveal>
-      </div>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
     </Layout>
   );
 };
