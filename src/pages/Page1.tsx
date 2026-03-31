@@ -116,7 +116,7 @@ const Page1 = () => {
         <ScrollReveal direction="full">
           <p className="text-muted-foreground text-center">
             Text goes here. Want to learn more? Visit{" "}
-            <Link to="/page-2" className="bio-link">Page 2</Link>
+            <Link to="/page-2" className="bio-link">Go to Page 2 →</Link>
             {" "}or check out the{" "}
             <Link to="/credits" className="bio-link">Credits</Link>.
           </p>
