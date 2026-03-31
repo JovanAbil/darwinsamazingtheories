@@ -119,10 +119,24 @@ const Page4 = () => {
         </ScrollReveal>
         */}
 
-        <Link to="/page-5" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
-            {/* EDIT: Button text and href */}
-            Go to Page 5 →
-        </Link>
+        {/* ============ CONCLUSION — fades in ============ */}
+        <ScrollReveal direction="full">
+          <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
+            <h2 className="text-3xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Conclusion heading */}
+              Text goes here
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              {/* EDIT: Conclusion text */}
+              Text goes here
+            </p>
+            <Link to="/page-5" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
+              {/* EDIT: Button text and href */}
+              Go to Page 5 →
+            </Link>
+          </div>
+        </ScrollReveal>
+    
   
       </div>
     </Layout>
