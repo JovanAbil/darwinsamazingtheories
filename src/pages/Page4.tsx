@@ -121,7 +121,7 @@ const Page4 = () => {
 
         <Link to="/page-5" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
             {/* EDIT: Button text and href */}
-            Go to Page 5
+            Go to Page 5 →
         </Link>
   
       </div>
