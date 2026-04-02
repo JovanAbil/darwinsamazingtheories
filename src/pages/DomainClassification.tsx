@@ -1,6 +1,8 @@
 // src/pages/DomainClassification.tsx
 import Layout from "@/components/Layout";
+import PageHeader from "@/components/PageHeader";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Link } from "react-router-dom";
 
 const DomainClassification = () => {
   return (
