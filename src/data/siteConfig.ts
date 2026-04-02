@@ -7,8 +7,8 @@
  */
 
 export const siteConfig = {
-  name: "Text goes here",
-  description: "Text goes here",
+  name: "Darwin’s Evolutionary Impact",
+  description: "A website made for a grade",
   author: "Jovan Abilash & Lucas Brown",
   contactEmail: "abilash.jovan@charterschool.org or brown.lucascharterschool.org",
   dateCreated: "2026-03-27",
