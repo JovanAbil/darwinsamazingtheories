@@ -111,9 +111,9 @@ const Page5 = () => {
               {/* EDIT: Conclusion text */}
               Text goes here
             </p>
-            <Link to="/credits" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
+            <Link to="/case" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
               {/* EDIT: Button text and href */}
-              Go to Credits →
+              Go to Case Study →
             </Link>
           </div>
         </ScrollReveal>
