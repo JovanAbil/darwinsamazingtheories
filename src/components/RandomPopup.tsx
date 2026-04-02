@@ -47,6 +47,17 @@ const RandomPopup = () => {
     return () => clearTimeout(timerRef);
   }, [showRandomPopup]);
 
+  // Press ',' to force a pop-up
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "," && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        showRandomPopup();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [showRandomPopup]);
+
   if (!currentMessage) return null;
 
   return (
