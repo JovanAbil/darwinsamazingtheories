@@ -125,6 +125,6 @@ const CaseStudy = () => {
       </div>
     </Layout>
   );
-
+};
 
 export default CaseStudy;
