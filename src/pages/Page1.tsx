@@ -114,12 +114,20 @@ const Page1 = () => {
 
         {/* ============ LINK EXAMPLE — fades in ============ */}
         <ScrollReveal direction="full">
-          <p className="text-muted-foreground text-center">
-            Text goes here. Want to learn more? Visit{" "}
-            <Link to="/page-2" className="bio-link">Go to Claim 2 →</Link>
-            {" "}or check out the{" "}
-            <Link to="/credits" className="bio-link">Credits</Link>.
-          </p>
+          <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
+            <h2 className="text-3xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Conclusion heading */}
+              Text goes here
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              {/* EDIT: Conclusion text */}
+              Text goes here
+            </p>
+            <Link to="/page-2" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
+                {/* EDIT: Button text and href */}
+                Go to Claim 2 →
+            </Link>
+          </div>
         </ScrollReveal>
 
         {/* ============ ADDITIONAL SECTIONS ============
