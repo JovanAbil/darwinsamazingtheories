@@ -129,5 +129,6 @@ const DomainClassification = () => {
       </div>
     </Layout>
   );
+};
 
 export default DomainClassification;
