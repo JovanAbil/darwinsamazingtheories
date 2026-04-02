@@ -1,6 +1,9 @@
 // src/pages/CaseStudy.tsx
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
+import ParallaxSection from "@/components/ParallaxSection";
+import PageHeader from "@/components/PageHeader";
+import { Link } from "react-router-dom";
 
 const CaseStudy = () => {
   return (
