@@ -85,14 +85,4 @@ export const homeContentBlocks: ContentBlock[] = [
     width: "100%",
     height: "400px",
   },
-  {
-    id: "block-3",
-    type: "image",
-    direction: "full",
-    //Fix this image
-    src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=500&fit=crop",
-    alt: "Text goes here",
-    width: "100%",
-    height: "500px",
-  },
 ];
