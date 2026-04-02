@@ -73,6 +73,17 @@ const Index = () => {
         </div>
       </section>
 
+      <ScrollReveal direction="right">
+          <iframe
+            src="https://www.youtube.com/watch?v=w56u2gv8XLs"
+            title="Darwin's Theory of Evolution"
+            className="w-full rounded-lg hover-pop"
+            style={{ height: "400px" }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </ScrollReveal>
+      
       {/* Second Parallax */}
       <ParallaxSection
         imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
