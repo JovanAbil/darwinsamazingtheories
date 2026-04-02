@@ -3,6 +3,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import Footer from "./Footer";
 import CounterDev from "./CounterDev";
+import RandomPopup from "./RandomPopup";
 
 interface LayoutProps {
   children: ReactNode;
@@ -23,6 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
         </div>
       </div>
       <CounterDev />
+      <RandomPopup />
     </SidebarProvider>
   );
 };
