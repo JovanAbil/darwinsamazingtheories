@@ -33,8 +33,8 @@ export interface ContentBlock {
 }
 
 export const heroContent = {
-  heading: "Text goes here",
-  subheading: "Text goes here",
+  heading: "Darwin’s Evolutionary Impact",
+  subheading: "Go Read!",
   ctaText: "Claims",
   ctaLink: "#claims",
 };
@@ -42,29 +42,29 @@ export const heroContent = {
 export const claims = [
   {
     id: "claim-1",
-    title: "Text goes here",
-    description: "Text goes here",
+    title: "Nonconstancy of species",
+    description: "Species are not fixed but can adapt and evolve over time",
     icon: "Leaf",
   },
   {
     id: "claim-2",
-    title: "Text goes here",
-    description: "Text goes here",
+    title: "Descent from a common ancestor",
+    description: "All life descends from a common ancestor",
   },
   {
     id: "claim-3",
-    title: "Text goes here",
-    description: "Text goes here",
+    title: "Gradual evolution",
+    description: "Species evolve slowly and steadily over time",
   },
   {
     id: "claim-4",
-    title: "Text goes here",
-    description: "Text goes here",
+    title: "Multiplication of species",
+    description: "New species are formed from a common ancestor",
   },
   {
     id: "claim-5",
-    title: "Text goes here",
-    description: "Text goes here",
+    title: "Natural Selection",
+    description: "The process through which populations of organisms adapt and change to reproduce better fit organisms for the environment",
   },
 ];
 
@@ -73,49 +73,26 @@ export const homeContentBlocks: ContentBlock[] = [
     id: "block-1",
     type: "text",
     direction: "left",
-    heading: "Text goes here",
-    content: "Text goes here",
+    heading: "Charles Darwin",
+    content: "Father of Evolution",
   },
   {
     id: "block-2",
     type: "image",
     direction: "right",
-    src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop",
-    alt: "Text goes here",
+    src: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Charles_Darwin_portrait.jpg",
+    alt: "Darwin",
     width: "100%",
     height: "400px",
   },
   {
     id: "block-3",
-    type: "text",
-    direction: "right",
-    heading: "Text goes here",
-    content: "Text goes here",
-  },
-  {
-    id: "block-4",
     type: "image",
     direction: "full",
+    //Fix this image
     src: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=500&fit=crop",
     alt: "Text goes here",
     width: "100%",
     height: "500px",
-  },
-  {
-    id: "block-5",
-    type: "text",
-    direction: "left",
-    heading: "Text goes here",
-    content: "Text goes here",
-    link: "/credits",
-  },
-  {
-    id: "block-6",
-    type: "image",
-    direction: "left",
-    src: "https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=600&h=400&fit=crop",
-    alt: "Text goes here",
-    width: "100%",
-    height: "400px",
   },
 ];
