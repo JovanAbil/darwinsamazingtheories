@@ -2,7 +2,8 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const DomainClassification = () => (
+const DomainClassification = () => {
+  return (
     <Layout>
       <PageHeader
         imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
