@@ -143,17 +143,18 @@ const Page1 = () => {
         </ScrollReveal>
         */}
 
-        <ScrollReveal direction="right">
-          <iframe
-            src="https://www.youtube.com/embed/w56u2gv8XLs"
-            title="Video title"
-            className="w-full rounded-lg hover-pop"
-            style={{ height: "400px" }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </ScrollReveal>
-
+          {/* --- YOUTUBE VIDEO (uncomment to use) ---
+            <ScrollReveal direction="right">
+              <iframe
+                src="https://www.youtube.com/embed/w56u2gv8XLs"
+                title="Video title"
+                className="w-full rounded-lg hover-pop"
+                style={{ height: "400px" }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </ScrollReveal>
+        */}
 
       </div>
     </Layout>
