@@ -75,7 +75,7 @@ const Index = () => {
 
       <ScrollReveal direction="right">
           <iframe
-            src="https://www.youtube.com/watch?v=w56u2gv8XLs"
+            src="https://www.youtube.com/embed/w56u2gv8XLs"
             title="Darwin's Theory of Evolution"
             className="w-full rounded-lg hover-pop"
             style={{ height: "400px" }}
