@@ -10,6 +10,8 @@ import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
 import Page5 from "./pages/Page5";
+import CaseStudy from "./pages/CaseStudy";
+import DomainClassification from "./pages/DomainClassification";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/page-3" element={<Page3 />} />
           <Route path="/page-4" element={<Page4 />} />
           <Route path="/page-5" element={<Page5 />} />
+          <Route path="/case" element={<CaseStudy />} />
+          <Route path="/classification" element={<DomainClassification />} />
           <Route path="/credits" element={<Credits />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
