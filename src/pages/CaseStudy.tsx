@@ -2,7 +2,7 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const MyNewPage = () => (
+const CaseStudy = () => (
   <Layout>
     <div className="container mx-auto px-6 py-20 space-y-16">
       <ScrollReveal direction="full">
