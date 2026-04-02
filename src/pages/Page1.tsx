@@ -126,18 +126,17 @@ const Page1 = () => {
         </ScrollReveal>
         */}
 
-        {/* --- YOUTUBE VIDEO (uncomment to use) ---
+        {/* --- YOUTUBE VIDEO --- */}
         <ScrollReveal direction="right">
           <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="Video title"
+            src="https://www.youtube.com/embed/w56u2gv8XLs"
+            title="YouTube Education Video"
             className="w-full rounded-lg hover-pop"
             style={{ height: "400px" }}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </ScrollReveal>
-        */}
 
       </div>
     </Layout>
