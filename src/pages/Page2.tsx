@@ -128,7 +128,7 @@ const Page2 = () => {
             </p>
             <Link to="/page-3" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
                 {/* EDIT: Button text and href */}
-                Go to Page 3 →
+                Go to Claim 3 →
             </Link>
           </div>
         </ScrollReveal>
