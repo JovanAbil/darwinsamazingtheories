@@ -88,16 +88,19 @@ const Index = () => {
           </p>
         </div>
       </ParallaxSection>
-      <ScrollReveal direction="right">
-          <iframe
-            src="https://www.youtube.com/embed/w56u2gv8XLs"
-            title="Darwin's Theory of Evolution"
-            className="w-full rounded-lg hover-pop"
-            style={{ height: "400px" }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </ScrollReveal>
+      
+      <section className="py-20">
+        <ScrollReveal direction="right">
+            <iframe
+              src="https://www.youtube.com/embed/w56u2gv8XLs"
+              title="Darwin's Theory of Evolution"
+              className="w-full rounded-lg hover-pop"
+              style={{ height: "400px" }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </ScrollReveal>
+        </section>
     <div>
       <ScrollReveal direction="full">
           <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
