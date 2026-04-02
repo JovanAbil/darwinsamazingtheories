@@ -143,10 +143,9 @@ const Page1 = () => {
         </ScrollReveal>
         */}
 
-        {/* --- YOUTUBE VIDEO (uncomment to use) ---
         <ScrollReveal direction="right">
           <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
+            src="https://www.youtube.com/watch?v=w56u2gv8XLs"
             title="Video title"
             className="w-full rounded-lg hover-pop"
             style={{ height: "400px" }}
@@ -154,7 +153,7 @@ const Page1 = () => {
             allowFullScreen
           />
         </ScrollReveal>
-        */}
+
 
       </div>
     </Layout>
