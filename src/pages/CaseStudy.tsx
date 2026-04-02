@@ -2,7 +2,8 @@
 import Layout from "@/components/Layout";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const CaseStudy = () => (
+const CaseStudy = () => {
+  return (
     <Layout>
       <PageHeader
         imageUrl="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop"
