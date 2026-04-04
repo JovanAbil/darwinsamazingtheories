@@ -40,7 +40,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <ScrollReveal direction="full">
             <h2 className="text-4xl font-display font-bold text-center text-foreground mb-12">
-              Text goes here
+              What are Darwin's 5 Claims?
             </h2>
           </ScrollReveal>
 
