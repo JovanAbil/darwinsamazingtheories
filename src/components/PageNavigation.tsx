@@ -14,40 +14,46 @@ const PageNavigation = () => {
   const next = currentIndex < navigationItems.length - 1 ? navigationItems[currentIndex + 1] : null;
 
   return (
-    <nav className="border-t border-border py-6 mt-12">
-      <div className="container mx-auto px-6 flex items-center justify-between">
+    <nav className="border-t border-border/50 py-8 mt-16">
+      <div className="container mx-auto px-6 flex items-center justify-between max-w-3xl">
         {/* Previous */}
         {prev ? (
           <a
             href={prev.href}
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+            className="flex items-center gap-3 px-5 py-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:text-foreground hover:border-primary/40 hover:shadow-[var(--shadow-soft)] transition-all duration-700 group"
           >
-            <ChevronLeft className="h-5 w-5 group-hover:-translate-x-1 transition-transform" />
-            <span className="text-sm">{prev.title}</span>
+            <ChevronLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
+            <div className="flex flex-col items-start">
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground/60 font-medium">Previous</span>
+              <span className="text-sm font-medium">{prev.title}</span>
+            </div>
           </a>
         ) : (
-          <div />
+          <div className="w-36" />
         )}
 
         {/* Home */}
         <a
           href="/"
-          className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center justify-center w-11 h-11 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-700 hover:shadow-[var(--shadow-soft)]"
         >
-          <Home className="h-5 w-5" />
+          <Home className="h-4 w-4" />
         </a>
 
         {/* Next */}
         {next ? (
           <a
             href={next.href}
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+            className="flex items-center gap-3 px-5 py-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:text-foreground hover:border-primary/40 hover:shadow-[var(--shadow-soft)] transition-all duration-700 group"
           >
-            <span className="text-sm">{next.title}</span>
-            <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <div className="flex flex-col items-end">
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground/60 font-medium">Next</span>
+              <span className="text-sm font-medium">{next.title}</span>
+            </div>
+            <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         ) : (
-          <div />
+          <div className="w-36" />
         )}
       </div>
     </nav>
