@@ -1,24 +1,27 @@
 import { useLocation, Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Home } from "lucide-react";
-import { navigationItems } from "@/data/navigation";
+import { navigationItems, type NavItem } from "@/data/navigation";
 
-/**
- * Prev / Home / Next navigation bar at bottom of every page.
- * Automatically determines neighbors based on navigation order.
- */
+/* Flatten nav tree so child pages are included in prev/next logic */
+const flattenNav = (items: NavItem[]): NavItem[] =>
+  items.flatMap((item) => [item, ...(item.children ? flattenNav(item.children) : [])]);
+
+const flatItems = flattenNav(navigationItems);
+
 const PageNavigation = () => {
   const location = useLocation();
-  const currentIndex = navigationItems.findIndex((item) => item.href === location.pathname);
+  const currentIndex = flatItems.findIndex((item) => item.href === location.pathname);
 
-  const prev = currentIndex > 0 ? navigationItems[currentIndex - 1] : null;
-  const next = currentIndex < navigationItems.length - 1 ? navigationItems[currentIndex + 1] : null;
+  const prev = currentIndex > 0 ? flatItems[currentIndex - 1] : null;
+  const next = currentIndex < flatItems.length - 1 ? flatItems[currentIndex + 1] : null;
 
   return (
     <nav className="border-t border-border/50 py-8 mt-16">
       <div className="container mx-auto px-6 flex items-center justify-between max-w-3xl">
         {/* Previous */}
         {prev ? (
-          <Link to ={prev.href}
+          <Link
+            to={prev.href}
             className="flex items-center gap-3 px-5 py-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:text-foreground hover:border-primary/40 hover:shadow-[var(--shadow-soft)] transition-all duration-700 group"
           >
             <ChevronLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
@@ -32,7 +35,8 @@ const PageNavigation = () => {
         )}
 
         {/* Home */}
-        <Link to="/"
+        <Link
+          to="/"
           className="flex items-center justify-center w-11 h-11 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-700 hover:shadow-[var(--shadow-soft)]"
         >
           <Home className="h-4 w-4" />
@@ -40,7 +44,7 @@ const PageNavigation = () => {
 
         {/* Next */}
         {next ? (
-          <Link 
+          <Link
             to={next.href}
             className="flex items-center gap-3 px-5 py-3 rounded-xl bg-card border border-border/60 text-muted-foreground hover:text-foreground hover:border-primary/40 hover:shadow-[var(--shadow-soft)] transition-all duration-700 group"
           >
