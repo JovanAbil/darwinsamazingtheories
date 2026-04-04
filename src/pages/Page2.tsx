@@ -124,7 +124,7 @@ const Page2 = () => {
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               {/* EDIT: Conclusion text */}
-              Text goes here
+              Click on the button to move forward!
             </p>
             <Link to="/page-3" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
                 {/* EDIT: Button text and href */}
