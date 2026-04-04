@@ -39,34 +39,6 @@ export const heroContent = {
   ctaLink: "#claims",
 };
 
-export const claims = [
-  {
-    id: "claim-1",
-    title: "Nonconstancy of species",
-    description: "Species are not fixed but can adapt and evolve over time",
-    icon: "Leaf",
-  },
-  {
-    id: "claim-2",
-    title: "Descent from a common ancestor",
-    description: "All life descends from a common ancestor",
-  },
-  {
-    id: "claim-3",
-    title: "Gradual evolution",
-    description: "Species evolve slowly and steadily over time",
-  },
-  {
-    id: "claim-4",
-    title: "Multiplication of species",
-    description: "New species are formed from a common ancestor",
-  },
-  {
-    id: "claim-5",
-    title: "Natural Selection",
-    description: "The process through which populations of organisms adapt and change to reproduce better fit organisms for the environment",
-  },
-];
 
 export const homeContentBlocks: ContentBlock[] = [
   {
