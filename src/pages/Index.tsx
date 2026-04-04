@@ -54,7 +54,7 @@ const Index = () => {
                        in src/data/claimsData.ts for that claim.
                        The image displays on the side of the card.
                        To link to the claim detail, the card links to /claims#claim-id */}
-                  <a href={`/page-${i + 1}`} className="block">
+                  <Link to={`/page-${i + 1}`} className="block">
                     <div className={`flex flex-col md:flex-row ${!isLeft ? "md:flex-row-reverse" : ""} gap-0 bg-card rounded-xl border border-border overflow-hidden hover-pop`}>
                       {claim.image && (
                         <img
@@ -72,10 +72,10 @@ const Index = () => {
                           </div>
                           <h3 className="font-display font-bold text-xl text-foreground">{claim.title}</h3>
                         </div>
-                        <p className="text-muted-foreground">{claim.description}</p>
+                        <p className="text-muted-foreground">{claim.longDescription}</p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </ScrollReveal>
               );
             })}
