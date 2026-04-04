@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Home, FileText, Heart, Shield, Leaf, Trees, Sun, Mountain, Users, ChevronDown } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import {
   Sidebar,
@@ -35,8 +35,8 @@ function NavItemRenderer({ item, collapsed }: { item: NavItem; collapsed: boolea
       <SidebarMenuItem>
         <SidebarMenuButton asChild>
           <div className="flex items-center w-full">
-            <a
-              href={item.href}
+            <Link
+              to={item.href}
               className={`flex items-center gap-2 rounded-md px-3 py-2 transition-colors flex-1 ${
                 isActive || childActive
                   ? "bg-accent text-accent-foreground font-medium"
@@ -45,7 +45,7 @@ function NavItemRenderer({ item, collapsed }: { item: NavItem; collapsed: boolea
             >
               <Icon className="h-4 w-4 shrink-0" />
               {!collapsed && <span>{item.title}</span>}
-            </a>
+            </Link>
             {hasChildren && !collapsed && (
               <button
                 onClick={(e) => { e.preventDefault(); e.stopPropagation(); setOpen(!open); }}
