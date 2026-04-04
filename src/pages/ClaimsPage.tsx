@@ -15,8 +15,7 @@ const ClaimsPage = () => {
     <Layout>
       <PageHeader
         imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
-        title="Our Claims"
-        description="Explore what we stand for — each claim backed by passion and purpose."
+        title="What are Darwin's Claims?"
       />
 
       {/* Claims as full-width cards */}
