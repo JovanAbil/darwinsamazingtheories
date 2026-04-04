@@ -4,17 +4,17 @@
  * =============================================
  * Edit this file to change home page content.
  *
+ * CLAIMS data has moved to src/data/claimsData.ts
+ *
  * CONTENT TYPES:
  *   - "text"   → renders a text block
  *   - "image"  → renders an image (set src, alt, width, height)
  *   - "video"  → renders a video (set src, width, height)
  *
  * DIRECTION:
- *   - "left"   → slides in from left on scroll down, exits to right on scroll up
- *   - "right"  → slides in from right on scroll down, exits to left on scroll up
- *   - "full"   → fades in/out (for full-width content)
- *
- * All items have hover pop-up effect automatically.
+ *   - "left"   → slides in from left
+ *   - "right"  → slides in from right
+ *   - "full"   → fades in (for full-width content)
  *
  * See /docs/MANAGEMENT.md for full instructions.
  */
@@ -23,13 +23,13 @@ export interface ContentBlock {
   id: string;
   type: "text" | "image" | "video";
   direction: "left" | "right" | "full";
-  content?: string;          // For text blocks
-  heading?: string;          // Optional heading
-  src?: string;              // For images/videos
-  alt?: string;              // For images
-  width?: string;            // CSS width (e.g., "100%", "500px")
-  height?: string;           // CSS height (e.g., "auto", "300px")
-  link?: string;             // Optional clickable link
+  content?: string;
+  heading?: string;
+  src?: string;
+  alt?: string;
+  width?: string;
+  height?: string;
+  link?: string;
 }
 
 export const heroContent = {
@@ -38,39 +38,6 @@ export const heroContent = {
   ctaText: "Learn More",
   ctaLink: "#claims",
 };
-
-export const claims = [
-  {
-    id: "claim-1",
-    title: "Sustainable Living",
-    description: "Promoting eco-friendly practices for a healthier planet.",
-    icon: "Leaf",
-  },
-  {
-    id: "claim-2",
-    title: "Biodiversity",
-    description: "Protecting the rich tapestry of life on Earth.",
-    icon: "Trees",
-  },
-  {
-    id: "claim-3",
-    title: "Clean Energy",
-    description: "Harnessing renewable resources for a brighter future.",
-    icon: "Sun",
-  },
-  {
-    id: "claim-4",
-    title: "Conservation",
-    description: "Preserving natural habitats for generations to come.",
-    icon: "Mountain",
-  },
-  {
-    id: "claim-5",
-    title: "Community",
-    description: "Building connections through shared environmental values.",
-    icon: "Users",
-  },
-];
 
 export const homeContentBlocks: ContentBlock[] = [
   {
