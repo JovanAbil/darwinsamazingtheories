@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import Footer from "./Footer";
+import PageNavigation from "./PageNavigation";
 import CounterDev from "./CounterDev";
 import RandomPopup from "./RandomPopup";
 
@@ -20,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
             <span className="ml-3 font-display font-bold text-lg text-foreground">BioSphere</span>
           </header>
           <main className="flex-1">{children}</main>
+          <PageNavigation />
           <Footer />
         </div>
       </div>
