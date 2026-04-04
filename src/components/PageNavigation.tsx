@@ -12,8 +12,8 @@ const PageNavigation = () => {
   const location = useLocation();
   const currentIndex = flatItems.findIndex((item) => item.href === location.pathname);
 
-  const prev = currentIndex > 0 ? navigationItems[currentIndex - 1] : null;
-  const next = currentIndex < navigationItems.length - 1 ? navigationItems[currentIndex + 1] : null;
+  const prev = currentIndex > 0 ? flatItems[currentIndex - 1] : null;
+  const next = currentIndex < flatItems.length - 1 ? flatItems[currentIndex + 1] : null;
 
   return (
     <nav className="border-t border-border/50 py-8 mt-16">
