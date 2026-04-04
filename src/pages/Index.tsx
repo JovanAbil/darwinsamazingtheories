@@ -3,7 +3,8 @@ import Layout from "@/components/Layout";
 import ParallaxSection from "@/components/ParallaxSection";
 import ContentBlock from "@/components/ContentBlock";
 import ScrollReveal from "@/components/ScrollReveal";
-import { heroContent, claims, homeContentBlocks } from "@/data/homeContent";
+import { heroContent, homeContentBlocks } from "@/data/homeContent";
+import { claims } from "@/data/claimsData";
 
 const claimIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Leaf, Trees, Sun, Mountain, Users,
@@ -33,7 +34,7 @@ const Index = () => {
         </div>
       </ParallaxSection>
 
-      {/* 5 Claims */}
+      {/* 5 Claims — full-width alternating cards */}
       <section id="claims" className="py-20 gradient-section">
         <div className="container mx-auto px-6">
           <ScrollReveal direction="full">
@@ -41,21 +42,39 @@ const Index = () => {
               What We Stand For
             </h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+          <div className="space-y-8">
             {claims.map((claim, i) => {
               const Icon = claimIconMap[claim.icon] || Leaf;
+              const isLeft = i % 2 === 0;
               return (
-                <ScrollReveal
-                  key={claim.id}
-                  direction={i % 2 === 0 ? "left" : "right"}
-                >
-                  <div className="bg-card rounded-lg p-6 text-center shadow-sm hover-pop border border-border overflow-hidden">
-                    <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/50 flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-primary" />
+                <ScrollReveal key={claim.id} direction={isLeft ? "left" : "right"}>
+                  {/* EDIT: To add an image to a claim card, add an `image` field
+                       in src/data/claimsData.ts for that claim.
+                       The image displays on the side of the card.
+                       To link to the claim detail, the card links to /claims#claim-id */}
+                  <a href={`/claims#${claim.id}`} className="block">
+                    <div className={`flex flex-col md:flex-row ${!isLeft ? "md:flex-row-reverse" : ""} gap-0 bg-card rounded-xl border border-border overflow-hidden hover-pop`}>
+                      {claim.image && (
+                        <img
+                          src={claim.image}
+                          alt={claim.title}
+                          className="w-full md:w-1/3 object-cover"
+                          style={{ minHeight: "180px" }}
+                          loading="lazy"
+                        />
+                      )}
+                      <div className="flex-1 p-6 flex flex-col justify-center">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-10 h-10 rounded-full bg-accent/50 flex items-center justify-center">
+                            <Icon className="h-5 w-5 text-primary" />
+                          </div>
+                          <h3 className="font-display font-bold text-xl text-foreground">{claim.title}</h3>
+                        </div>
+                        <p className="text-muted-foreground">{claim.description}</p>
+                      </div>
                     </div>
-                    <h3 className="font-display font-bold text-lg text-foreground mb-2">{claim.title}</h3>
-                    <p className="text-muted-foreground text-sm">{claim.description}</p>
-                  </div>
+                  </a>
                 </ScrollReveal>
               );
             })}
