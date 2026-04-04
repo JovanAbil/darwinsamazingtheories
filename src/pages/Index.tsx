@@ -120,8 +120,6 @@ const Index = () => {
             />
           </ScrollReveal>
         </section>
-    <div>
-      </div>
     </Layout>
   );
 };
