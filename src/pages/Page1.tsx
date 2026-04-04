@@ -112,20 +112,6 @@ const Page1 = () => {
           />
         </ScrollReveal>
 
-        {/* ============ LINK EXAMPLE — fades in ============ */}
-        <ScrollReveal direction="full">
-          <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
-            <h2 className="text-3xl font-display font-bold text-foreground mb-3">
-              {/* EDIT: Conclusion heading */}
-              Click on the button to move forward!
-            </h2>
-            <Link to="/page-2" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
-                {/* EDIT: Button text and href */}
-                Go to Claim 2 →
-            </Link>
-          </div>
-        </ScrollReveal>
-
         {/* ============ ADDITIONAL SECTIONS ============
          * Copy any block above, change the direction and content.
          * Uncomment the video example below to add a video:
