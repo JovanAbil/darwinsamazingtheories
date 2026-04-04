@@ -43,7 +43,7 @@ const ClaimsPage = () => {
                       <h3 className="font-display font-bold text-2xl text-foreground">{claim.title}</h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
-                      {claim.longDescription || claim.description}
+                      {claim.longDescription}
                     </p>
                   </div>
                 </div>
