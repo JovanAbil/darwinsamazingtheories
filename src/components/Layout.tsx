@@ -4,6 +4,7 @@ import { AppSidebar } from "./AppSidebar";
 import Footer from "./Footer";
 import CounterDev from "./CounterDev";
 import RandomPopup from "./RandomPopup";
+import PageNavigation from "./PageNavigation";
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,10 +21,12 @@ const Layout = ({ children }: LayoutProps) => {
             <span className="ml-3 font-display font-bold text-lg text-foreground">Darwin’s Evolutionary Impact</span>
           </header>
           <main className="flex-1">{children}</main>
+          <PageNavigation />
           <Footer />
         </div>
       </div>
       <CounterDev />
+      <RandomPopup />
     </SidebarProvider>
   );
 };
