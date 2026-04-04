@@ -120,18 +120,6 @@ const Page4 = () => {
         */}
 
         {/* ============ CONCLUSION — fades in ============ */}
-        <ScrollReveal direction="full">
-          <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
-            <h2 className="text-3xl font-display font-bold text-foreground mb-3">
-              {/* EDIT: Conclusion heading */}
-              Click on the button to move forward!
-            </h2>
-            <Link to="/page-5" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
-              {/* EDIT: Button text and href */}
-              Go to Claim 5 →
-            </Link>
-          </div>
-        </ScrollReveal>
     
   
       </div>
