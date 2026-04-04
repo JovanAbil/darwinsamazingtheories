@@ -35,7 +35,7 @@ export const claims: Claim[] = [
     title: "Nonconstancy of species",
     description: "Text goes here",
     icon: "Leaf",
-    image: "https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=600&h=300&fit=crop",
+    image: "https://www.openaccessgovernment.org/wp-content/uploads/2021/08/Fig.-3-phenotypic-plasticity-locusts-permission-not-yet-received_no-text.jpg?w=600&h=300&fit=crop",
     longDescription: "Species are not fixed but can adapt and evolve over time",
   },
   {
@@ -43,7 +43,7 @@ export const claims: Claim[] = [
     title: "Descent from a common ancestor",
     description: "Text goes here",
     icon: "Trees",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=300&fit=crop",
+    image: "https://evolution.berkeley.edu/wp-content/uploads/2021/08/limbs_phylongeny_2020.png?w=600&h=300&fit=crop",
     longDescription: "All life descends from a common ancestor",
   },
   {
@@ -51,7 +51,7 @@ export const claims: Claim[] = [
     title: "Gradual evolution",
     description: "Harnessing renewable resources for a brighter future.",
     icon: "Sun",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=300&fit=crop",
+    image: "https://lh3.googleusercontent.com/proxy/mRjcMoRsNfgE4E45aboAfBdfCtxcfo-gmjPE1_qfyrMqPQt6wtJzreD2k1dHz-Hamc2ch9bSJ3nLnvCBHazy_c39sCUn660bdTlftJhtQsKj?w=600&h=300&fit=crop",
     longDescription: "Species evolve slowly and steadily over time",
   },
   {
@@ -59,7 +59,7 @@ export const claims: Claim[] = [
     title: "Multiplication of species",
     description: "Text goes here",
     icon: "Mountain",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&h=300&fit=crop",
+    image: "https://i.guim.co.uk/img/media/a43b1cdbdec97ceed41a5eb273d12f99bdd180e9/0_0_4214_3333/master/4214.jpg?w=600&h=300&fit=crop",
     longDescription: "New species are formed from a common ancestor",
   },
   {
@@ -67,7 +67,7 @@ export const claims: Claim[] = [
     title: "Natural Selection",
     description: "Text goes here",
     icon: "Users",
-    image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=300&fit=crop",
+    image: "https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A05e1465a992f7f2754fb257864af8398f6e7ae94ecc4af9ffebf00fa%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1?w=600&h=300&fit=crop",
     longDescription: "The process through which populations of organisms adapt and change to reproduce better fit organisms for the environment",
   },
 ];
