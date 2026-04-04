@@ -67,9 +67,9 @@ const ClaimsPage = () => {
               {/* EDIT: Conclusion heading */}
               Click on the button to move forward!
             </h2>
-            <Link to="/claims" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
+            <Link to="/page-1" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
                 {/* EDIT: Button text and href */}
-                Go to Claims Overview
+                Go to Claim 1 →
             </Link>
           </div>
         </ScrollReveal>
