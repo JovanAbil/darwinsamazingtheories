@@ -125,11 +125,11 @@ const Index = () => {
           <div className="bg-accent/20 border border-border rounded-xl p-10 text-center hover-pop">
             <h2 className="text-3xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Conclusion heading */}
-              Click on the button to learn about Claim 1!
+              Click on the button to move forward!
             </h2>
-            <Link to="/page-1" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
+            <Link to="/claims" className="inline-block mt-6 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
                 {/* EDIT: Button text and href */}
-                Go to Claim 1 →
+                Go to Claims Overview
             </Link>
           </div>
         </ScrollReveal>
