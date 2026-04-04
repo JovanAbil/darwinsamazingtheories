@@ -59,7 +59,7 @@ export const claims: Claim[] = [
     title: "Multiplication of species",
     description: "Text goes here",
     icon: "Mountain",
-    image: "https://i.guim.co.uk/img/media/a43b1cdbdec97ceed41a5eb273d12f99bdd180e9/0_0_4214_3333/master/4214.jpg?w=600&h=300&fit=crop",
+    image: "https://www.allaboutbirds.org/news/wp-content/uploads/2018/12/AdaptiveRadiationGraphic-e1545161936415-1280x675.jpg?w=300&h=300&fit=crop",
     longDescription: "New species are formed from a common ancestor",
   },
   {
