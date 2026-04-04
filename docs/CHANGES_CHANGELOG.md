@@ -11,44 +11,64 @@ This file documents **every change** made to existing files, with the exact code
 **Action**: Create this file at `src/data/claimsData.ts` and paste the entire contents from the project.
 
 ### 2. `src/data/timelineData.ts`
-**What**: Timeline entries for the interactive timeline.
+**What**: Timeline entries for the interactive timeline on the Claims page.
 **Action**: Create this file and paste the entire contents.
 
 ### 3. `src/data/quizData.ts`
-**What**: Quiz questions for the Darwin quiz.
+**What**: Quiz questions for the Darwin quiz on the Claims page.
 **Action**: Create this file and paste the entire contents.
 
 ### 4. `src/data/popupMessages.ts`
 **What**: Random popup messages shown every 5–10 minutes.
 **Action**: Create this file and paste the entire contents.
 
-### 5. `src/components/InteractiveTimeline.tsx`
-**What**: Interactive timeline with clickable circles and sidebar panel.
+### 5. `src/pages/ClaimsPage.tsx`
+**What**: The dedicated Claims page with full-width claim cards, Darwin quiz, and interactive timeline. This is the page the "Claims" sidebar link goes to.
 **Action**: Create this file and paste the entire contents.
 
-### 6. `src/components/DarwinQuiz.tsx`
-**What**: Quiz component with multiple-choice questions.
+### 6. `src/components/InteractiveTimeline.tsx`
+**What**: Interactive timeline with clickable circles on a vertical line. Clicking a circle opens a sidebar panel showing text, images, or videos.
 **Action**: Create this file and paste the entire contents.
 
-### 7. `src/components/PageNavigation.tsx`
+**How to add timeline entries**: Edit `src/data/timelineData.ts`. Each entry has:
+- `id` — unique string
+- `year` — label shown on the timeline (e.g. "1831")
+- `heading` — title shown next to the dot and in the sidebar
+- `content` — paragraph text shown in the sidebar
+- `image` / `imageAlt` — optional image in the sidebar
+- `videoUrl` — optional YouTube embed URL or local video path
+- `videoType` — `"youtube"` or `"local"`
+
+See `docs/TIMELINE_GUIDE.md` for full instructions.
+
+### 7. `src/components/DarwinQuiz.tsx`
+**What**: Quiz component with multiple-choice questions that poke fun at Darwin.
+**Action**: Create this file and paste the entire contents.
+
+**How to add quiz questions**: Edit `src/data/quizData.ts`. Each question has:
+- `id` — unique string
+- `question` — the question text
+- `image` — optional image URL
+- `options` — array of `{ text, isCorrect }` objects
+- `explanation` — text shown after answering
+
+See `docs/QUIZ_GUIDE.md` for full instructions.
+
+### 8. `src/components/PageNavigation.tsx`
 **What**: Prev/Home/Next navigation arrows at the bottom of every page.
 **Action**: Create this file and paste the entire contents.
 
-### 8. `src/components/RandomPopup.tsx`
-**What**: Random popup dialog triggered by timer or comma key.
+### 9. `src/components/RandomPopup.tsx`
+**What**: Random popup dialog triggered by timer (5–10 min) or pressing the comma key.
 **Action**: Create this file and paste the entire contents.
 
-### 9. `src/components/ParallaxSection.tsx`
+### 10. `src/components/ParallaxSection.tsx`
 **What**: Parallax background image section with scroll effect.
 **Action**: Create this file and paste the entire contents.
 
-### 10. `src/components/PageHeader.tsx`
+### 11. `src/components/PageHeader.tsx`
 **What**: Reusable page header with parallax background image.
 **Action**: Create this file and paste the entire contents.
-
-### 11. `src/pages/ClaimsPage.tsx`
-**What**: The dedicated Claims page (used if you want a separate claims page — currently not routed but available).
-**Action**: Create this file if you want it available for future use.
 
 ### 12. Documentation files
 Create these in your `docs/` folder:
@@ -61,22 +81,32 @@ Create these in your `docs/` folder:
 
 ## MODIFIED FILES (exact snippets with placement)
 
-Each section below shows the **exact code to add/change** and **where** in the original unmodified file.
-
 ---
 
 ### 13. `src/data/navigation.ts`
 
-**What changed**: Pages 1–5 are now children of a "Claims" dropdown. Standalone Page 1–5 entries removed.
+**What changed**: Added `children` support to `NavItem` interface. "Claims" is its own page at `/claims` with Pages 1–5 as dropdown children. Standalone Page 1–5 entries removed.
 
-**REPLACE** the entire `navigationItems` array (starting at `export const navigationItems`) with:
+**REPLACE** the `NavItem` interface with:
+
+```ts
+export interface NavItem {
+  title: string;
+  href: string;
+  icon: string;
+  description?: string;
+  children?: NavItem[];
+}
+```
+
+**REPLACE** the entire `navigationItems` array with:
 
 ```ts
 export const navigationItems: NavItem[] = [
   { title: "Home", href: "/", icon: "Home", description: "Main landing page" },
   {
     title: "Claims",
-    href: "/page-1",
+    href: "/claims",
     icon: "Shield",
     description: "Our core claims",
     children: [
@@ -91,25 +121,13 @@ export const navigationItems: NavItem[] = [
 ];
 ```
 
-**ALSO** add `children` to the `NavItem` interface if not already present. The interface should be:
-
-```ts
-export interface NavItem {
-  title: string;
-  href: string;
-  icon: string;
-  description?: string;
-  children?: NavItem[];
-}
-```
-
 ---
 
 ### 14. `src/components/AppSidebar.tsx`
 
 **What changed**: Complete rewrite to support collapsible dropdown navigation with chevron toggles and nested children.
 
-**Action**: **Replace the entire file** with the version from the project. This is a full rewrite because the dropdown logic is deeply integrated — patching individual lines would be error-prone.
+**Action**: **Replace the entire file** with the version from the project. This is a full rewrite — patching individual lines would be error-prone.
 
 ---
 
@@ -125,6 +143,12 @@ import CounterDev from "./CounterDev";
 import RandomPopup from "./RandomPopup";
 ```
 
+**ADD this line** between `</main>` and `<Footer />`:
+
+```tsx
+          <PageNavigation />
+```
+
 **ADD these two lines** inside the JSX, right before the closing `</SidebarProvider>` tag:
 
 ```tsx
@@ -132,31 +156,30 @@ import RandomPopup from "./RandomPopup";
       <RandomPopup />
 ```
 
-**ADD this line** between `</main>` and `<Footer />`:
-
-```tsx
-          <PageNavigation />
-```
-
-So the JSX structure becomes:
+Final JSX structure:
 ```tsx
           <main className="flex-1">{children}</main>
-          <PageNavigation />       {/* ← ADD THIS LINE */}
+          <PageNavigation />       {/* ← ADD */}
           <Footer />
+        </div>
+      </div>
+      <CounterDev />               {/* ← ADD */}
+      <RandomPopup />              {/* ← ADD */}
+    </SidebarProvider>
 ```
 
 ---
 
 ### 16. `src/App.tsx`
 
-**What changed**: Removed the `/claims` route (Pages 1–5 are the claims now).
+**What changed**: Added ClaimsPage import and route.
 
-**REMOVE** this import line:
+**ADD this import** (with the other page imports):
 ```ts
 import ClaimsPage from "./pages/ClaimsPage";
 ```
 
-**REMOVE** this route line:
+**ADD this route** inside `<Routes>`, after the home route:
 ```tsx
 <Route path="/claims" element={<ClaimsPage />} />
 ```
@@ -165,7 +188,7 @@ import ClaimsPage from "./pages/ClaimsPage";
 
 ### 17. `src/pages/Index.tsx`
 
-**What changed**: Claims section now links to individual pages instead of anchors. Added parallax sections.
+**What changed**: Claims section links to individual pages. Added parallax sections.
 
 **ADD these imports** at the top:
 ```ts
@@ -204,12 +227,8 @@ const claimIconMap: Record<string, React.ComponentType<{ className?: string }>> 
 </ParallaxSection>
 ```
 
-**In the claims cards**, change the link from `/claims#${claim.id}` to page links:
+**In the claims cards**, each card links to its page:
 ```tsx
-{/* OLD: */}
-<a href={`/claims#${claim.id}`} className="block">
-
-{/* NEW: */}
 <a href={`/page-${i + 1}`} className="block">
 ```
 
@@ -226,10 +245,7 @@ const claimIconMap: Record<string, React.ComponentType<{ className?: string }>> 
     <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-6">
       Together we can make a difference for our planet.
     </p>
-    <a
-      href="/credits"
-      className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop"
-    >
+    <a href="/credits" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover-pop">
       Get Involved
     </a>
   </div>
@@ -248,7 +264,7 @@ If your version has a `claims` export in this file, **delete** the entire `claim
 
 ### 19. All Page files (`src/pages/Page1.tsx` through `Page5.tsx`)
 
-**What changed**: Each page now uses `PageHeader` with a parallax background image instead of a plain header.
+**What changed**: Each page now uses `PageHeader` with a parallax background image.
 
 **ADD this import** at the top of each page:
 ```ts
@@ -272,14 +288,15 @@ Each page uses a different image — check the current project files for the spe
 
 | Change | Files |
 |---|---|
+| Claims page (quiz + timeline + cards) | `ClaimsPage.tsx`, `claimsData.ts` |
 | Claims dropdown in sidebar | `navigation.ts`, `AppSidebar.tsx` |
+| Interactive timeline | `InteractiveTimeline.tsx`, `timelineData.ts` |
+| Darwin quiz | `DarwinQuiz.tsx`, `quizData.ts` |
 | Page navigation arrows | `PageNavigation.tsx`, `Layout.tsx` |
 | Random popups | `RandomPopup.tsx`, `popupMessages.ts`, `Layout.tsx` |
 | Parallax backgrounds | `ParallaxSection.tsx`, `PageHeader.tsx`, `Index.tsx`, `Page1-5.tsx` |
-| Interactive timeline | `InteractiveTimeline.tsx`, `timelineData.ts` |
-| Darwin quiz | `DarwinQuiz.tsx`, `quizData.ts` |
 | Home page claim cards → page links | `Index.tsx`, `claimsData.ts` |
-| Remove /claims route | `App.tsx` |
+| Claims route | `App.tsx` |
 
 ---
 

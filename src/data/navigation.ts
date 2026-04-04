@@ -30,7 +30,7 @@ export const navigationItems: NavItem[] = [
   { title: "Home", href: "/", icon: "Home", description: "Main landing page" },
   {
     title: "Claims",
-    href: "/page-1",
+    href: "/claims",
     icon: "Shield",
     description: "Our core claims",
     children: [
