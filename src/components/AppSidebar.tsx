@@ -67,8 +67,8 @@ function NavItemRenderer({ item, collapsed }: { item: NavItem; collapsed: boolea
             return (
               <SidebarMenuItem key={child.href}>
                 <SidebarMenuButton asChild>
-                  <a
-                    href={child.href}
+                  <Link
+                    to={child.href}
                     className={`flex items-center gap-2 rounded-md px-3 py-1.5 text-sm transition-colors ${
                       childIsActive
                         ? "bg-accent text-accent-foreground font-medium"
@@ -77,7 +77,7 @@ function NavItemRenderer({ item, collapsed }: { item: NavItem; collapsed: boolea
                   >
                     <ChildIcon className="h-3.5 w-3.5 shrink-0" />
                     <span>{child.title}</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             );
