@@ -314,3 +314,17 @@ Each page uses a different image — check the current project files for the spe
    { title: "New Topic", href: "/page-6", icon: "Leaf" },
    ```
 4. The PageNavigation arrows will automatically pick up the new page from the navigation array.
+
+---
+
+## PAGE NAVIGATION BUTTONS (Bottom of every page)
+
+**File**: `src/components/PageNavigation.tsx`
+**Action**: Create this file and paste the entire contents from the project.
+
+**What it does**: Shows Previous / Home / Next buttons at the bottom of every page. Previous and Next are styled as rounded cards with labels; the Home button is a circular icon.
+
+**Integration** (already done in `Layout.tsx` — see section 15 above):
+Place `<PageNavigation />` between `</main>` and `<Footer />` in `src/components/Layout.tsx`.
+
+The component auto-detects the current page from the URL and finds neighbors using the `navigationItems` array in `src/data/navigation.ts`. No props needed — just add/remove pages in the navigation array and the buttons update automatically.
