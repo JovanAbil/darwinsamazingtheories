@@ -18,7 +18,7 @@ const Page2 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://lh3.googleusercontent.com/sitesv/APaQ0SSfkmlsXZWcivqPoZd52LcTkKi2mJu5NZCSNQASBF-ceuQHRrAjCIsdXItVeF4pC48R3dfblmH8DYAjXGaFgU_rdm3m9ifdzt7HHKLa5afgiVciCPkPso-FtsxYNFKAla5V6QV-aBwuDWDt6h5uVNcmo2kvUvSy0PeWw-CmPJ2NgsP5KgV7XS0lGYhwgda1u1rkz-6rMtsXanncEK3kZyjGM-HYGVZj1wKA=w1280?w=1600&h=900&fit=crop"
+        imageUrl={`${import.meta.env.BASE_URL}images/descent.png`}
         title="Descent from a common ancestor"
         description="All life descends from a common ancestor"
       />
