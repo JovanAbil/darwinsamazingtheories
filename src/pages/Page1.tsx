@@ -30,24 +30,13 @@ const Page1 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
-        title="Text goes here"
-        description="Text goes here"
+        imageUrl="https://lh3.googleusercontent.com/sitesv/APaQ0SQvbjabYSQ1Qz2yOw5DV93X-mZxPpwmgvIfpKjErr1mK6OR9iSzRs11haJXZlEPFAoHmDthI_mKT6dIGErO9JC9Dt6oqzzETlAoR62n5f4V2xtCJ73_MxTT53Q7XAYQEIhBAHFY6XceCz6RNtaV32DZUZll1Zt1pViqWSFoiKJvv4fNOidZibUGtRoZC4e2Z-ALDu5nxj3hLgl4aP9mUC_Uy90NED5Wx8MP1Lc=w1280?w=1600&h=900&fit=crop"
+        title="Nonconstancy of species"
+        description="Species are not fixed but can adapt and evolve over time"
       />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
-        {/* ============ PAGE TITLE — fades in ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Change this title */}
-            Text goes here
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Change this description */}
-            Text goes here.
-          </p>
-        </ScrollReveal>
-
+    
         {/* ============ TEXT BLOCK — slides from LEFT ============ */}
         <ScrollReveal direction="left">
           <div className="max-w-3xl">
@@ -67,7 +56,7 @@ const Page1 = () => {
         <ScrollReveal direction="right">
           <img
             src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop"
-            alt="Sunlight filtering through a lush forest canopy"
+            alt="name"
             className="rounded-lg hover-pop w-full"
             style={{ height: "400px", objectFit: "cover" }}
           />
