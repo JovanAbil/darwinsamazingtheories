@@ -18,7 +18,7 @@ const Page2 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl={`${import.meta.env.BASE_URL}images/descent.png`}
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
         title="Descent from a common ancestor"
         description="All life descends from a common ancestor"
       />
