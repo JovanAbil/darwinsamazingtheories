@@ -9,7 +9,7 @@ const CaseStudy = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
         title="Text goes here"
         description="Text goes here"
       />
