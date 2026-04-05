@@ -51,7 +51,7 @@ export const claims: Claim[] = [
     title: "Clean Energy",
     description: "Harnessing renewable resources for a brighter future.",
     icon: "Sun",
-    image: "/assets/gradual-speciation.png",
+    image: "/images/gradual-speciation.png",
     longDescription: "Clean energy comes from renewable, zero-emission sources that do not pollute the atmosphere. Solar, wind, and hydroelectric power are transforming how we generate electricity and reducing our dependence on fossil fuels.",
   },
   {
