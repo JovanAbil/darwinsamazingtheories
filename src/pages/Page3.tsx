@@ -19,25 +19,11 @@ const Page3 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
-        title="Text goes here"
-        description="Text goes here"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
+        title="Gradual evolution"
+        description="Harnessing renewable resources for a brighter future."
       />
       <div className="space-y-0">
-
-        {/* ============ PAGE HEADER ============ */}
-        <div className="container mx-auto px-6 pt-20 pb-10">
-          <ScrollReveal direction="full">
-            <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-              {/* EDIT: Page title */}
-              Text goes here
-            </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl">
-              {/* EDIT: Page intro */}
-              Text goes here
-            </p>
-          </ScrollReveal>
-        </div>
 
         {/* ============ ROW 1: TEXT LEFT, IMAGE RIGHT ============ */}
         <div className="container mx-auto px-6 py-10">
