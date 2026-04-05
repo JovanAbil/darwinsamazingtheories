@@ -17,23 +17,11 @@ const Page4 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&h=900&fit=crop"
-        title="Text goes here"
-        description="Text goes here"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
+        title="Multiplication of species"
+        description="New species are formed from a common ancestor"
       />
       <div className="container mx-auto px-6 py-20 space-y-16">
-
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            Text goes here
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            Text goes here
-          </p>
-        </ScrollReveal>
 
         {/* ============ ACCENT HIGHLIGHT CARD — fades in ============ */}
         <ScrollReveal direction="full">
