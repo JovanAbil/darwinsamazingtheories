@@ -51,7 +51,7 @@ export const claims: Claim[] = [
     title: "Gradual evolution",
     description: "Harnessing renewable resources for a brighter future.",
     icon: "Sun",
-    image: "${import.meta.env.BASE_URL}images/gradual.png",
+    image: `${import.meta.env.BASE_URL}images/gradual.png`,
     longDescription: "Species evolve slowly and steadily over time",
   },
   {
