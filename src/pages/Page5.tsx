@@ -18,9 +18,9 @@ const Page5 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1600&h=900&fit=crop"
-        title="Text goes here"
-        description="Text goes here"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
+        title="Natural Selection"
+        description="The process through which populations of organisms adapt and change to reproduce better fit organisms for the environment"
       />
       <div className="container mx-auto px-6 py-20 space-y-20">
 
