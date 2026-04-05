@@ -30,7 +30,7 @@ const Page1 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://lh3.googleusercontent.com/sitesv/APaQ0SQvbjabYSQ1Qz2yOw5DV93X-mZxPpwmgvIfpKjErr1mK6OR9iSzRs11haJXZlEPFAoHmDthI_mKT6dIGErO9JC9Dt6oqzzETlAoR62n5f4V2xtCJ73_MxTT53Q7XAYQEIhBAHFY6XceCz6RNtaV32DZUZll1Zt1pViqWSFoiKJvv4fNOidZibUGtRoZC4e2Z-ALDu5nxj3hLgl4aP9mUC_Uy90NED5Wx8MP1Lc=w1280?w=1600&h=900&fit=crop"
+        imageUrl={`${import.meta.env.BASE_URL}images/nonconstant.png`}
         title="Nonconstancy of species"
         description="Species are not fixed but can adapt and evolve over time"
       />
