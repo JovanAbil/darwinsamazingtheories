@@ -18,24 +18,13 @@ const Page2 = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=900&fit=crop"
-        title="Text goes here"
-        description="Text goes here"
+        imageUrl="https://lh3.googleusercontent.com/sitesv/APaQ0SSfkmlsXZWcivqPoZd52LcTkKi2mJu5NZCSNQASBF-ceuQHRrAjCIsdXItVeF4pC48R3dfblmH8DYAjXGaFgU_rdm3m9ifdzt7HHKLa5afgiVciCPkPso-FtsxYNFKAla5V6QV-aBwuDWDt6h5uVNcmo2kvUvSy0PeWw-CmPJ2NgsP5KgV7XS0lGYhwgda1u1rkz-6rMtsXanncEK3kZyjGM-HYGVZj1wKA=w1280?w=1600&h=900&fit=crop"
+        title="Descent from a common ancestor"
+        description="All life descends from a common ancestor"
       />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            Text goes here
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            Text goes here
-          </p>
-        </ScrollReveal>
-
+        
         {/* ============ TWO-COLUMN IMAGE GRID ============ */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ScrollReveal direction="left">
