@@ -1,5 +1,16 @@
 import { useEffect, useRef, type ReactNode } from "react";
 
+/* =============================================
+ * PAGE HEADER — PARALLAX TITLE SECTION
+ * =============================================
+ * Displays a parallax background image behind the
+ * page title and description. The image scrolls at
+ * a slower pace creating a depth effect.
+ *
+ * EDIT: Change imageUrl to your own image path.
+ *       e.g. imageUrl="/images/my-header.jpg"
+ * =========================================== */
+
 interface PageHeaderProps {
   imageUrl: string;
   title: string;
@@ -72,10 +83,10 @@ const PageHeader = ({ imageUrl, title, description, children, speed = 0.4 }: Pag
       />
       <div className="absolute inset-0 bg-background/35 backdrop-blur-[1px]" />
       <div className="relative z-10 container mx-auto px-6 py-16">
-        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 animate-fade-in">
+        <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 animate-fade-in" style={{ textShadow: "0 1px 4px rgba(0,0,0,0.6), 0 0 12px rgba(0,0,0,0.3)" }}>
           {title}
         </h1>
-        <p className="text-muted-foreground text-lg max-w-2xl animate-fade-in">
+        <p className="text-lg max-w-2xl animate-fade-in text-foreground font-medium" style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5), 0 0 8px rgba(0,0,0,0.25)" }}>
           {description}
         </p>
         {children}
