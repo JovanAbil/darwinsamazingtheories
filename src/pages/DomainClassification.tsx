@@ -9,7 +9,7 @@ const DomainClassification = () => {
   return (
     <Layout>
       <PageHeader
-        imageUrl="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
         title="Text goes here"
         description="Text goes here"
       />
