@@ -51,7 +51,7 @@ export const claims: Claim[] = [
     title: "Gradual evolution",
     description: "Harnessing renewable resources for a brighter future.",
     icon: "Sun",
-    image: "https://lh3.googleusercontent.com/sitesv/APaQ0SS8yFfMFp2G66AUoMobFMg9ULcbEK9DXNPQsrGcSBGmfWLyZq8LD1YFuT1y7cf4Xc4m5o68U1ioTLs7QCCwbbQR_bcl465Mov8LBnUGiPRDpTv5p8tMnRM_vfqqdqrFB7KsF1RkugqwJ-YcbUkXze1ImrMh0oV-KXjTpAuGgtKmQlzq3_c0I0ENjZh8VE7maLKKZEdVbFxvx2aZcg_mcSMfoSTpiZzf2YCUPq0=w1280?w=600&h=300&fit=crop",
+    image: "/images/gradual.png",
     longDescription: "Species evolve slowly and steadily over time",
   },
   {
