@@ -21,6 +21,9 @@ const Credits = () => {
                   Unsplash
                 </a>
               </li>
+              <li>
+              Google
+              </li>
             </ul>
           </div>
           <div>
