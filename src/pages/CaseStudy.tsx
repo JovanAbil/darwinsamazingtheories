@@ -15,18 +15,6 @@ const CaseStudy = () => {
       />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            Text goes here
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            Text goes here
-          </p>
-        </ScrollReveal>
-
         {/* ============ TWO-COLUMN IMAGE GRID ============ */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ScrollReveal direction="left">
