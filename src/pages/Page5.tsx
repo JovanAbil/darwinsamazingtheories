@@ -24,18 +24,6 @@ const Page5 = () => {
       />
       <div className="container mx-auto px-6 py-20 space-y-20">
 
-        {/* ============ PAGE TITLE ============ */}
-        <ScrollReveal direction="full">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-            {/* EDIT: Page title */}
-            Text goes here
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">
-            {/* EDIT: Page description */}
-            Text goes here
-          </p>
-        </ScrollReveal>
-
         {/* ============ STEP 1 — slides from LEFT ============ */}
         <ScrollReveal direction="left">
           <div className="max-w-2xl">
