@@ -15,20 +15,6 @@ const DomainClassification = () => {
       />
       <div className="space-y-0">
 
-        {/* ============ PAGE HEADER ============ */}
-        <div className="container mx-auto px-6 pt-20 pb-10">
-          <ScrollReveal direction="full">
-            <h1 className="text-4xl font-display font-bold text-foreground mb-4">
-              {/* EDIT: Page title */}
-              Text goes here
-            </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl">
-              {/* EDIT: Page intro */}
-              Text goes here
-            </p>
-          </ScrollReveal>
-        </div>
-
         {/* ============ ROW 1: TEXT LEFT, IMAGE RIGHT ============ */}
         <div className="container mx-auto px-6 py-10">
           <div className="flex flex-col md:flex-row gap-10 items-center">
