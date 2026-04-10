@@ -32,7 +32,7 @@ export const popupMessages: PopupMessage[] = [
   {
     id: "natural-selection-joke",
     title: "🧬 A Natural Observation",
-    content: `Just like a better adapted organism to its environment, we have adapted to the requirements for our project. That 100% almost seems like the <strong>naturally selection</strong> to make at this point, doesn't it?<br/><br/><em>*Note: Joke crafted at 12:15 am, not guaranteed to make the viewer laugh, chuckle, or feel happy in any way. If the joke didn't land, kindly erase it from your memory and <strong>naturally select</strong> a better interactive aspect on our site because this one clearly isn't <strong>fit</strong> enough to make you laugh (see what I did there).</em>`,
+    content: `Just like a better adapted organism to its environment, we have adapted to the requirements for our project. That 100% almost seems like the <strong>natural selection</strong> to make at this point, doesn't it?<br/><br/><em>*Note: Joke crafted at 12:15 am, not guaranteed to make the viewer laugh, chuckle, or feel happy in any way. If the joke didn't land, kindly erase it from your memory and <strong>naturally select</strong> a better interactive aspect on our site because this one clearly isn't <strong>fit</strong> enough to make you laugh (see what I did there).</em>`,
   },
 
   /* --- ADD MORE POP-UPS BELOW — copy this template: ---
