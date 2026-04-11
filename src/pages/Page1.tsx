@@ -42,29 +42,38 @@ const Page1 = () => {
           <div className="max-w-3xl">
             <h2 className="text-2xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Your heading */}
-              Text goes here
+              What does it mean?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Your paragraph text */}
-              Text goes here
+              The non-constancy of species is one of Darwin’s claims and says that species are not fixed to always being the same, but can rather have variation and adapt to their environments.
             </p>
           </div>
         </ScrollReveal>
 
         {/* ============ IMAGE — slides from RIGHT ============ */}
         {/* EDIT: Replace src with /images/your-file.jpg after adding to public/images/ */}
-        <ScrollReveal direction="right">
-          <img
-            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop"
-            alt="name"
-            className="rounded-lg hover-pop w-full"
-            style={{ height: "400px", objectFit: "cover" }}
-          />
-          <p className="text-sm text-muted-foreground mt-2 italic">
-            {/* EDIT: Image caption */}
-            Text goes here
-          </p>
-        </ScrollReveal>
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <ScrollReveal direction="right" className="flex-1">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Your heading */}
+              What led him to this conclusion?
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Your text */}
+              Darwin made this claim by observing that finches on different islands had different beak shapes that were specifically adapted to their own food sources. For example this proved that the finches could indeed adapt and change to their environment. 
+            </p>
+          </ScrollReveal>
+          <ScrollReveal direction="left" className="flex-1">
+            {/* EDIT: Replace with your image */}
+            <img
+              src="https://d20knvk822eu5a.cloudfront.net/s3fs-public-optimized-mobile/2024-02/Blogposts-Landscape-in-story-Darwins-finches-1.png.webp?w=600&h=350&fit=crop"
+              alt="Green leaves with morning dew"
+              className="rounded-lg hover-pop w-full"
+              style={{ height: "300px", objectFit: "cover" }}
+            />
+          </ScrollReveal>
+        </div>
 
         {/* ============ TEXT + IMAGE SIDE BY SIDE ============ */}
         {/* On mobile these stack vertically */}
@@ -72,17 +81,18 @@ const Page1 = () => {
           <ScrollReveal direction="left" className="flex-1">
             <h2 className="text-2xl font-display font-bold text-foreground mb-3">
               {/* EDIT: Your heading */}
-              Text goes here
+              How do antibiotic-resistant bacteria evolve? 
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Your text */}
-              Text goes here
+              Bacteria evolve antibiotic resistance through natural selection, where random genetic mutations allow some bacteria to survive against the antibiotics. The surviving bacteria reproduce rapidly, because they are able to survive the antibiotics, which allows them to pass on resistance genes. This is what allows once susceptible bacteria to evolve and become antibiotic resistant.
+              A real-world example of antibiotic resistant bacteria evolving is Methicillin-resistant Staphylococcus aureus or MRSA for short. Initially the bacteria was Staphylococcus aureus (staph) and could easily be treated with the antibiotic penicillin and later it was discovered that the antibiotic methicillin proved to be even more effective. Doctors then consistently used methicillin to treat serious staph infections. From there, rare mutant bacteria existed that produced a different enzyme, or altered their cell walls, preventing methicillin from making any impact on them whatsoever. When patients were treated, susceptible bacteria died, but the resistant bacteria survived and grew in numbers. The final population would be entirely MRSA, which cannot be killed by methicillin and required different antibiotics in order to be properly treated. 
             </p>
           </ScrollReveal>
           <ScrollReveal direction="right" className="flex-1">
             {/* EDIT: Replace with your image */}
             <img
-              src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=600&h=350&fit=crop"
+              src="https://www.reactgroup.org/wp-content/uploads/2022/08/UU_React_Infografer_4_vit-e1661261418778.png?w=600&h=350&fit=crop"
               alt="Green leaves with morning dew"
               className="rounded-lg hover-pop w-full"
               style={{ height: "300px", objectFit: "cover" }}
@@ -91,14 +101,17 @@ const Page1 = () => {
         </div>
 
         {/* ============ FULL-WIDTH IMAGE — fades in ============ */}
-        <ScrollReveal direction="full">
-          {/* EDIT: Replace with your wide image */}
+        <ScrollReveal direction="right">
           <img
-            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=500&fit=crop"
-            alt="Panoramic misty valley with rolling green hills"
-            className="w-full rounded-lg hover-pop"
-            style={{ height: "500px", objectFit: "cover" }}
+            src="https://images.unsplash.com/photo-1698472505070-6d3b90afb530?w=800&h=400&fit=crop"
+            alt="name"
+            className="rounded-lg hover-pop w-full"
+            style={{ height: "400px", objectFit: "cover" }}
           />
+          <p className="text-sm text-muted-foreground mt-2 italic">
+            {/* EDIT: Image caption */}
+            Whales Still Have Pelvic Bones: The non-constancy of species means current forms are modified versions of ancestors. Whales, which are marine mammals, still possess vestigial pelvic bones (hips) that serve no purpose, a clear remnant of their land-dwelling ancestors.
+          </p>
         </ScrollReveal>
 
         {/* ============ ADDITIONAL SECTIONS ============
