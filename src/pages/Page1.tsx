@@ -78,17 +78,6 @@ const Page1 = () => {
         {/* ============ TEXT + IMAGE SIDE BY SIDE ============ */}
         {/* On mobile these stack vertically */}
         <div className="flex flex-col md:flex-row gap-8 items-center">
-          <ScrollReveal direction="left" className="flex-1">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-3">
-              {/* EDIT: Your heading */}
-              How do antibiotic-resistant bacteria evolve? 
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              {/* EDIT: Your text */}
-              Bacteria evolve antibiotic resistance through natural selection, where random genetic mutations allow some bacteria to survive against the antibiotics. The surviving bacteria reproduce rapidly, because they are able to survive the antibiotics, which allows them to pass on resistance genes. This is what allows once susceptible bacteria to evolve and become antibiotic resistant.
-              A real-world example of antibiotic resistant bacteria evolving is Methicillin-resistant Staphylococcus aureus or MRSA for short. Initially the bacteria was Staphylococcus aureus (staph) and could easily be treated with the antibiotic penicillin and later it was discovered that the antibiotic methicillin proved to be even more effective. Doctors then consistently used methicillin to treat serious staph infections. From there, rare mutant bacteria existed that produced a different enzyme, or altered their cell walls, preventing methicillin from making any impact on them whatsoever. When patients were treated, susceptible bacteria died, but the resistant bacteria survived and grew in numbers. The final population would be entirely MRSA, which cannot be killed by methicillin and required different antibiotics in order to be properly treated. 
-            </p>
-          </ScrollReveal>
           <ScrollReveal direction="right" className="flex-1">
             {/* EDIT: Replace with your image */}
             <img
@@ -98,7 +87,26 @@ const Page1 = () => {
               style={{ height: "300px", objectFit: "cover" }}
             />
           </ScrollReveal>
+          <ScrollReveal direction="left" className="flex-1">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Your heading */}
+              How do antibiotic-resistant bacteria evolve? 
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Your text */}
+              Bacteria evolve antibiotic resistance through natural selection, where random genetic mutations allow some bacteria to survive against the antibiotics. The surviving bacteria reproduce rapidly, because they are able to survive the antibiotics, which allows them to pass on resistance genes. This is what allows once susceptible bacteria to evolve and become antibiotic resistant. 
+            </p>
+          </ScrollReveal>
         </div>
+        
+         <ScrollReveal direction="full">
+          <div className="bg-accent/30 border border-border rounded-xl p-8 hover-pop">
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Highlight text */}
+              A real-world example of antibiotic resistant bacteria evolving is Methicillin-resistant Staphylococcus aureus or MRSA for short. Initially the bacteria was Staphylococcus aureus (staph) and could easily be treated with the antibiotic penicillin and later it was discovered that the antibiotic methicillin proved to be even more effective. Doctors then consistently used methicillin to treat serious staph infections. From there, rare mutant bacteria existed that produced a different enzyme, or altered their cell walls, preventing methicillin from making any impact on them whatsoever. When patients were treated, susceptible bacteria died, but the resistant bacteria survived and grew in numbers. The final population would be entirely MRSA, which cannot be killed by methicillin and required different antibiotics in order to be properly treated.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* ============ FULL-WIDTH IMAGE — fades in ============ */}
         <ScrollReveal direction="right">
