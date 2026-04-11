@@ -22,91 +22,92 @@ const Page2 = () => {
         title="Descent from a common ancestor"
         description="All life descends from a common ancestor"
       />
-      <div className="container mx-auto px-6 py-20 space-y-16">
+      <div className="space-y-0">
 
-        
-        {/* ============ TWO-COLUMN IMAGE GRID ============ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ScrollReveal direction="left">
-            {/* EDIT: Replace image and caption */}
-            <img
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=350&fit=crop"
-              alt="Mountain landscape at golden hour"
-              className="rounded-lg hover-pop w-full"
-              style={{ height: "300px", objectFit: "cover" }}
-            />
-            <p className="text-sm text-muted-foreground mt-2">Text goes here</p>
-          </ScrollReveal>
-          <ScrollReveal direction="right">
-            {/* EDIT: Replace image and caption */}
-            <img
-              src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=350&fit=crop"
-              alt="Rolling green meadow under blue sky"
-              className="rounded-lg hover-pop w-full"
-              style={{ height: "300px", objectFit: "cover" }}
-            />
-            <p className="text-sm text-muted-foreground mt-2">Text goes here</p>
-          </ScrollReveal>
-        </div>
-
-        {/* ============ FULL-WIDTH FEATURE IMAGE ============ */}
-        <ScrollReveal direction="full">
-          <div className="relative rounded-lg overflow-hidden hover-pop">
-            {/* EDIT: Replace with your hero image */}
-            <img
-              src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=500&fit=crop"
-              alt="Misty valley panorama"
-              className="w-full"
-              style={{ height: "450px", objectFit: "cover" }}
-            />
+        {/* ============ ROW 1: TEXT LEFT, IMAGE RIGHT ============ */}
+        <div className="container mx-auto px-6 py-10">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
+            <ScrollReveal direction="left" className="flex-1">
+              <h2 className="text-3xl font-display font-bold text-foreground mb-4">
+                {/* EDIT: Section heading */}
+               Text goes here
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                {/* EDIT: Section text */}
+                Text goes here
+              </p>
+              <Link to="/page-1" className="bio-link">
+                Text goes here
+              </Link>
+            </ScrollReveal>
+            <ScrollReveal direction="right" className="flex-1">
+              {/* EDIT: Replace image */}
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop"
+                alt="Sunlit forest path"
+                className="rounded-lg hover-pop w-full"
+                style={{ height: "350px", objectFit: "cover" }}
+              />
+            </ScrollReveal>
           </div>
-          <p className="text-muted-foreground mt-4 text-center text-lg">
-            {/* EDIT: Caption for the feature image */}
-            Text goes here
-          </p>
-        </ScrollReveal>
-
-        {/* ============ THREE-COLUMN CARDS ============ */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ScrollReveal direction="left">
-            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              {/* EDIT: Replace image, title, description */}
-              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
-              <p className="text-muted-foreground text-sm">Text goes here</p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal direction="full">
-            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop" alt="Waterfall in forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
-              <p className="text-muted-foreground text-sm">Text goes here</p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal direction="right">
-            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              <img src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop" alt="Close-up of green leaves" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
-              <p className="text-muted-foreground text-sm">Text goes here</p>
-            </div>
-          </ScrollReveal>
         </div>
 
-        {/* ============ VIDEO + TEXT (uncomment to use) ============
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <ScrollReveal direction="left" className="flex-1">
-            <video src="/videos/your-video.mp4" controls className="rounded-lg w-full hover-pop" style={{ maxHeight: "350px" }}>
-              Your browser does not support the video tag.
-            </video>
-          </ScrollReveal>
-          <ScrollReveal direction="right" className="flex-1">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-3">About This Video</h2>
-            <p className="text-muted-foreground leading-relaxed">Your video description here.</p>
+        {/* ============ PARALLAX DIVIDER ============ */}
+        {/* EDIT: Change imageUrl to your own image */}
+        <ParallaxSection
+          imageUrl="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=600&fit=crop"
+          height="40vh"
+        >
+          <div className="text-center px-6">
+            <h2 className="text-3xl font-display font-bold text-foreground mb-2">
+              Text goes here
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+              Text goes here
+            </p>
+          </div>
+        </ParallaxSection>
+
+        {/* ============ ROW 2: IMAGE LEFT, TEXT RIGHT (flipped) ============ */}
+        <div className="container mx-auto px-6 py-10">
+          <div className="flex flex-col md:flex-row-reverse gap-10 items-center">
+            <ScrollReveal direction="right" className="flex-1">
+              <h2 className="text-3xl font-display font-bold text-foreground mb-4">
+                {/* EDIT: Section heading */}
+                Text goes here
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                {/* EDIT: Section text */}
+                Text goes here
+              </p>
+            </ScrollReveal>
+            <ScrollReveal direction="left" className="flex-1">
+              {/* EDIT: Replace image */}
+              <img
+                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=400&fit=crop"
+                alt="Green meadow landscape"
+                className="rounded-lg hover-pop w-full"
+                style={{ height: "350px", objectFit: "cover" }}
+              />
+            </ScrollReveal>
+          </div>
+        </div>
+
+        {/* ============ FULL-WIDTH VIDEO (uncomment to use) ============
+        <div className="container mx-auto px-6 py-10">
+          <ScrollReveal direction="full">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Video title"
+              className="w-full rounded-lg hover-pop"
+              style={{ height: "450px" }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </ScrollReveal>
         </div>
         */}
 
-  
       </div>
     </Layout>
   );
