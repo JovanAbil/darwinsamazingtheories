@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import PageHeader from "@/components/PageHeader";
+import ParallaxSection from "@/components/ParallaxSection";  
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
 
