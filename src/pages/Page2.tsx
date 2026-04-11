@@ -25,21 +25,31 @@ const Page2 = () => {
       />
       <div className="space-y-0">
 
+        <ScrollReveal direction="left">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Your heading */}
+              What does it mean?
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Your paragraph text */}
+              Descent from a common ancestor is a claim made by Darwin that says all living organisms are related and come from a singular common ancestor. This claim by Darwin suggests all life branched from one source which can be backed up by shared genetic code (DNA/RNA) and fundamental cellular mechanisms, however Darwin didn’t have genetic evidence so it was more of a hypothesis at the time (Jeanson, 2014). Once the claim proved to be true later on in time with more advanced technology, it showed how organisms have shared their genes which can all be traced back to a common ancestor.
+            </p>
+          </div>
+        </ScrollReveal>
+        
         {/* ============ ROW 1: TEXT LEFT, IMAGE RIGHT ============ */}
         <div className="container mx-auto px-6 py-10">
           <div className="flex flex-col md:flex-row gap-10 items-center">
             <ScrollReveal direction="left" className="flex-1">
               <h2 className="text-3xl font-display font-bold text-foreground mb-4">
                 {/* EDIT: Section heading */}
-               Text goes here
+               How did Darwin find out?
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                 {/* EDIT: Section text */}
-                Text goes here
+                Darwin found evidence for this claim when he saw that various finch species on the islands closely resembled one of the mainland species. Over time, these birds became different from each other and had specialized feeding habits. Their beak structures evolved and adapted to different diets. Overall, these birds prove they came from a common ancestor and evolved from that common ancestor to adapt to their environment.
               </p>
-              <Link to="/page-1" className="bio-link">
-                Text goes here
-              </Link>
             </ScrollReveal>
             <ScrollReveal direction="right" className="flex-1">
               {/* EDIT: Replace image */}
