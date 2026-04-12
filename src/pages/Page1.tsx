@@ -61,8 +61,7 @@ const Page1 = () => {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Your text */}
-              Darwin made this claim by observing that finches on different islands had different beak shapes that were specifically adapted to their own food sources. For example this proved that the finches could indeed adapt and change to their environment. 
-            </p>
+Darwin made this claim by observing that finches on different islands had different beak shapes that were specifically adapted to their own food sources (Tomkins, 2024). For example this proved that the finches could indeed adapt and change to their environment.             </p>
           </ScrollReveal>
           <ScrollReveal direction="left" className="flex-1">
             {/* EDIT: Replace with your image */}
@@ -103,7 +102,7 @@ const Page1 = () => {
           <div className="bg-accent/30 border border-border rounded-xl p-8 hover-pop">
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Highlight text */}
-              A real-world example of antibiotic resistant bacteria evolving is Methicillin-resistant Staphylococcus aureus or MRSA for short. Initially the bacteria was Staphylococcus aureus (staph) and could easily be treated with the antibiotic penicillin and later it was discovered that the antibiotic methicillin proved to be even more effective. Doctors then consistently used methicillin to treat serious staph infections. From there, rare mutant bacteria existed that produced a different enzyme, or altered their cell walls, preventing methicillin from making any impact on them whatsoever. When patients were treated, susceptible bacteria died, but the resistant bacteria survived and grew in numbers. The final population would be entirely MRSA, which cannot be killed by methicillin and required different antibiotics in order to be properly treated.
+A real-world example of antibiotic resistant bacteria evolving is Methicillin-resistant Staphylococcus aureus or MRSA for short. MRSA affects the skin and symptoms of it can be when the skin is red, warm, and swollen (CDC, 2025). Initially the bacteria was Staphylococcus aureus (staph) and could easily be treated with the antibiotic penicillin and later it was discovered that the antibiotic methicillin proved to be even more effective (Auwaerter, 2005). Doctors then consistently used methicillin to treat serious staph infections. From there, rare mutant bacteria existed that produced a different enzyme, or altered their cell walls, preventing methicillin from making any impact on them whatsoever. When patients were treated, susceptible bacteria died, but the resistant bacteria survived and grew in numbers. The final population would be entirely MRSA, which cannot be killed by methicillin and required different antibiotics in order to be properly treated.
             </p>
           </div>
         </ScrollReveal>
