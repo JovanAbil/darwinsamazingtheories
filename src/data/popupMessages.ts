@@ -28,6 +28,39 @@ export interface PopupMessage {
   content: string;
 }
 
+/**
+ * PAGE-BOTTOM POP-UPS
+ * Map a route (e.g. "/page-1") to a popup that fires when the user
+ * scrolls to the bottom of that page. Shows every time without fail.
+ */
+export const pageBottomPopups: Record<string, PopupMessage> = {
+  "/page-1": {
+    id: "bottom-claim-1",
+    title: "🌱 You Finished Claim 1!",
+    content: `Congrats on making it through! If natural selection were a class, you'd be the <strong>fittest</strong> student. Darwin would be proud… or maybe confused — hard to tell with that beard.<br/><br/><em>Fun fact: Darwin once spent 8 years studying barnacles. Eight. Years. And you thought this page was long.</em>`,
+  },
+  "/page-2": {
+    id: "bottom-claim-2",
+    title: "🌳 Claim 2 Complete!",
+    content: `You've reached the bottom — just like how biodiversity reaches every corner of the planet!<br/><br/><em>Did you know there are more species of beetles than any other order of insects? Even Darwin said, "God has an inordinate fondness for beetles."</em>`,
+  },
+  "/page-3": {
+    id: "bottom-claim-3",
+    title: "☀️ Claim 3 Done!",
+    content: `You made it! That took about as long as it takes for a new species to emerge… okay maybe not <strong>that</strong> long.<br/><br/><em>Speciation can take thousands to millions of years. You finished this page in minutes. Clearly you're evolving faster than the rest of us.</em>`,
+  },
+  "/page-4": {
+    id: "bottom-claim-4",
+    title: "🏔️ Claim 4 Conquered!",
+    content: `You've scaled the heights of Claim 4! Much like a mountain goat adapting to rocky terrain, you've adapted to our content.<br/><br/><em>Conservation tip: The best way to protect a species is to protect its habitat. The best way to protect your grade is to keep reading.</em>`,
+  },
+  "/page-5": {
+    id: "bottom-claim-5",
+    title: "👥 All Claims Complete!",
+    content: `You did it — every single claim page! If this were a <strong>fitness landscape</strong>, you'd be sitting right at the peak.<br/><br/><em>Now go tell your friends. Spread the knowledge like an invasive species — but, you know, in a good way.</em>`,
+  },
+};
+
 export const popupMessages: PopupMessage[] = [
   {
     id: "natural-selection-joke",
