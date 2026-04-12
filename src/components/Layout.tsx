@@ -28,6 +28,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
       <CounterDev />
       <RandomPopup />
+      <PageBottomPopup />
     </SidebarProvider>
   );
 };
