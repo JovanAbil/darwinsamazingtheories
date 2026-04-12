@@ -34,7 +34,7 @@ export interface PopupMessage {
  * scrolls to the bottom of that page. Shows every time without fail.
  */
 export const pageBottomPopups: Record<string, PopupMessage> = {
-  "/page-1": {
+  "/": {
     id: "darkmode",
     title: "Dark Mode",
     content: `Please set the website to dark mode as it was <strong>MADE</strong> for dark mode by checking the 'sun/moon' icon at the bottom of the navigation tab on the left side!`,
