@@ -10,74 +10,120 @@ const CaseStudy = () => {
     <Layout>
       <PageHeader
         imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
-        title="Text goes here"
-        description="Text goes here"
+        title="Case Study"
+        description="Insects vs Bacillus thuringiensis (Bt) corn"
       />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
-        {/* ============ TWO-COLUMN IMAGE GRID ============ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <ScrollReveal direction="left">
-            {/* EDIT: Replace image and caption */}
-            <img
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=350&fit=crop"
-              alt="Mountain landscape at golden hour"
-              className="rounded-lg hover-pop w-full"
-              style={{ height: "300px", objectFit: "cover" }}
-            />
-            <p className="text-sm text-muted-foreground mt-2">Text goes here</p>
+        {/* EDIT: Replace src with /images/your-file.jpg after adding to public/images/ */}
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <ScrollReveal direction="right" className="flex-1">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Your heading */}
+              What is this crop?
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Your text */}
+This crop is genetically modified to express proteins from the soil bacterium Bacillus thuringiensis, which are toxic to specific pests like the European corn borer and corn rootworm. This technology allows the plant to produce its own insecticide, reducing the need for chemical sprays.
           </ScrollReveal>
-          <ScrollReveal direction="right">
-            {/* EDIT: Replace image and caption */}
+          <ScrollReveal direction="left" className="flex-1">
+            {/* EDIT: Replace with your image */}
             <img
-              src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&h=350&fit=crop"
-              alt="Rolling green meadow under blue sky"
+              src="https://d20knvk822eu5a.cloudfront.net/s3fs-public-optimized-mobile/2024-02/Blogposts-Landscape-in-story-Darwins-finches-1.png.webp?w=600&h=350&fit=crop"
+              alt="Green leaves with morning dew"
               className="rounded-lg hover-pop w-full"
               style={{ height: "300px", objectFit: "cover" }}
             />
-            <p className="text-sm text-muted-foreground mt-2">Text goes here</p>
           </ScrollReveal>
         </div>
 
-        {/* ============ FULL-WIDTH FEATURE IMAGE ============ */}
-        <ScrollReveal direction="full">
-          <div className="relative rounded-lg overflow-hidden hover-pop">
-            {/* EDIT: Replace with your hero image */}
-            <img
-              src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=500&fit=crop"
-              alt="Misty valley panorama"
-              className="w-full"
-              style={{ height: "450px", objectFit: "cover" }}
-            />
+        <ParallaxSection
+          imageUrl="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&h=600&fit=crop"
+          height="40vh"
+        >
+          <div className="text-center px-6">
+            <h2 className="text-3xl font-display font-bold text-foreground mb-2">
+              How Bt Corn Supports Darwin’s 5 Claims
+            </h2>
           </div>
-          <p className="text-muted-foreground mt-4 text-center text-lg">
-            {/* EDIT: Caption for the feature image */}
-            Text goes here
-          </p>
-        </ScrollReveal>
+        </ParallaxSection>
+          
 
-        {/* ============ THREE-COLUMN CARDS ============ */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        {/* ============ FIVE-COLUMN CARDS ============ */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           <ScrollReveal direction="left">
-            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              {/* EDIT: Replace image, title, description */}
-              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
-              <p className="text-muted-foreground text-sm">Text goes here</p>
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
+              <img
+                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop"
+                alt="Bt Corn"
+                className="rounded-md w-full mb-4"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Nonconstancy of Species</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Bt corn, with its special ability to produce its own insecticide, has caused changes to organisms in its environment. The European corn borer, corn rootworm and other insects have developed a resistance to the Bt corn's insecticide. To do this they had to change and adapt to the corn's modification, representing nonconstancy of species.
+              </p>
             </div>
           </ScrollReveal>
+        
+          <ScrollReveal direction="left">
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
+              <img
+                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop"
+                alt="Common Ancestor"
+                className="rounded-md w-full mb-4"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Descent from a Common Ancestor</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                These now resistant insects didn't appear out of nowhere. They came from their once non-resistant species ancestors, which falls under descent from a common ancestor.
+              </p>
+            </div>
+          </ScrollReveal>
+        
           <ScrollReveal direction="full">
-            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop" alt="Waterfall in forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
-              <p className="text-muted-foreground text-sm">Text goes here</p>
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
+              <img
+                src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop"
+                alt="Gradual Evolution"
+                className="rounded-md w-full mb-4"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Gradual Evolution</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                The now resistant insects didn't instantaneously change and adapt to Bt corn's insecticide. They took time to gain a steady population of resistant insects. Gradually, over time, evolution occurred, falling under gradual evolution.
+              </p>
             </div>
           </ScrollReveal>
+        
           <ScrollReveal direction="right">
-            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              <img src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop" alt="Close-up of green leaves" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
-              <h3 className="font-display font-bold text-lg text-foreground mb-2">Text goes here</h3>
-              <p className="text-muted-foreground text-sm">Text goes here</p>
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop"
+                alt="Multiplication of Species"
+                className="rounded-md w-full mb-4"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Multiplication of Species</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Over time the split between species of resistant insects from non-resistant represents multiplication of species.
+              </p>
+            </div>
+          </ScrollReveal>
+        
+          <ScrollReveal direction="right">
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
+              <img
+                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=250&fit=crop"
+                alt="Natural Selection"
+                className="rounded-md w-full mb-4"
+                style={{ height: "200px", objectFit: "cover" }}
+              />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Natural Selection</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                The non-resistant insects died out due to being unfit for their environment. Those who were resistant survived, grew in numbers, and eventually dominated. They were fit for their environment and overall show how natural selection took place with Bt corn and the insects.
+              </p>
             </div>
           </ScrollReveal>
         </div>
