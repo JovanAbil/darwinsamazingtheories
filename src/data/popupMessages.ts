@@ -37,7 +37,7 @@ export const popupMessages: PopupMessage[] = [
   {
     id: "luca-joke",
     title: "LUCA - Claim 2",
-    content: `<strong>Lucas:<strong> What do you get when you have multiple LUCAs<br/><strong>Jovan:<strong> You shouldn’t because there needs to be a last one, there could’ve been a community of the same species if that is what you're referring to.<br/><strong>Lucas:<strong> No, I was going to say me because <strong>LUCAs<strong> like <em>Lucas<em>, but it's not funny anymore.<br/>`,
+    content: `<strong>Lucas:</strong> What do you get when you have multiple LUCAs<br/><strong>Jovan:</strong> You shouldn’t because there needs to be a last one, there could’ve been a community of the same species if that is what you're referring to.<br/><strong>Lucas:</strong> No, I was going to say me because <strong>LUCAs</strong> like <em>Lucas</em>, but it's not funny anymore.<br/>`,
   },
 
   /* --- ADD MORE POP-UPS BELOW — copy this template: ---
