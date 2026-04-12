@@ -53,12 +53,12 @@ const ClaimsPage = () => {
         </div>
       </section>
 
-      {/* Darwin Quiz */}
+      {/* Darwin Quiz 
       <DarwinQuiz />
 
-      {/* Interactive Timeline */}
+      {/* Interactive Timeline 
       <InteractiveTimeline />
-
+      */}
     </Layout>
   );
 };
