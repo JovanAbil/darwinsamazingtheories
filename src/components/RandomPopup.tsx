@@ -28,10 +28,17 @@ const RandomPopup = () => {
 
   const showRandomPopup = useCallback(() => {
     if (popupMessages.length === 0) return;
-    const msg = popupMessages[Math.floor(Math.random() * popupMessages.length)];
-    setCurrentMessage(msg);
+    if (popupMessages.length === 1) {
+      setCurrentMessage(popupMessages[0]);
+    } else {
+      let msg;
+      do {
+        msg = popupMessages[Math.floor(Math.random() * popupMessages.length)];
+      } while (msg.id === currentMessage?.id);
+      setCurrentMessage(msg);
+    }
     setOpen(true);
-  }, []);
+  }, [currentMessage]);
 
   useEffect(() => {
     if (popupMessages.length === 0) return;
