@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import PageNavigation from "./PageNavigation";
 import CounterDev from "./CounterDev";
 import RandomPopup from "./RandomPopup";
+import PageBottomPopup from "./PageBottomPopup";
 
 interface LayoutProps {
   children: ReactNode;
