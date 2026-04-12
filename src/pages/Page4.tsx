@@ -79,16 +79,14 @@ Speciation occurs today primarily through geographical isolation, which is allop
         {/* ============ ROW 2: IMAGE LEFT, TEXT RIGHT (flipped) ============ */}
         <div className="container mx-auto px-6 py-10">
           <div className="flex flex-col md:flex-row-reverse gap-10 items-center">
-            <ScrollReveal direction="right" className="flex-1">
-              <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-                {/* EDIT: Section heading */}
-                Allopatric Speciation
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                {/* EDIT: Section text */}
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
+              {/* EDIT: Replace image, title, description */}
+              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Allopatric Speciation</h3>
+              <p className="text-muted-foreground text-sm">
 This where physical barriers like, rivers, mountains, or human-caused fragmentation, separate the populations. These isolated groups face different selective pressures like climate and predators that cause different species to arise over time.
               </p>
-            </ScrollReveal>
+            </div>
             <ScrollReveal direction="left" className="flex-1">
               <h2 className="text-3xl font-display font-bold text-foreground mb-4">
                 {/* EDIT: Section heading */}
@@ -104,6 +102,14 @@ Polar bears and grizzly bears come from the same ancestor but are two distinct s
 
         <div className="container mx-auto px-6 py-10">
           <div className="flex flex-col md:flex-row-reverse gap-10 items-center">
+            <div className="bg-card rounded-lg p-5 border border-border hover-pop">
+              {/* EDIT: Replace image, title, description */}
+              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
+              <h3 className="font-display font-bold text-lg text-foreground mb-2">Sympatric Speciation</h3>
+              <p className="text-muted-foreground text-sm">
+New species are made without physical barriers. This often occurs when parts of a population specialize in different things or consume different food within the same area
+              </p>
+            </div>
             <ScrollReveal direction="right" className="flex-1">
                <h2 className="text-3xl font-display font-bold text-foreground mb-4">
                 {/* EDIT: Section heading */}
@@ -112,16 +118,6 @@ Polar bears and grizzly bears come from the same ancestor but are two distinct s
               <p className="text-muted-foreground text-lg leading-relaxed">
                 {/* EDIT: Section text */}
 A real-life example of sympatric speciation is the North American apple maggot fly, which diverged into distinct species while inhabiting the same geographic area. Originally they fed only on hawthorn fruit, but then some flies shifted to apple trees, which were introduced in the 19th century. This caused a whole new species to be introduced. Because the young would favor the scent of the food they were born on, flies born on apples would favor apples, and flies born on hawthorn would favor hawthorn (Berkeley University of California, n.d.).
-              </p>
-            </ScrollReveal>
-            <ScrollReveal direction="left" className="flex-1">
-              <h2 className="text-3xl font-display font-bold text-foreground mb-4">
-                {/* EDIT: Section heading */}
-                Sympatric Speciation
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                {/* EDIT: Section text */}
-New species are made without physical barriers. This often occurs when parts of a population specialize in different things or consume different food within the same area
               </p>
             </ScrollReveal>
           </div>
