@@ -45,8 +45,8 @@ const CaseStudy = () => {
           </div>
         </ParallaxSection>
 
-        {/* ============ FIVE-COLUMN CARDS ============ */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {/* ============ THREE-COLUMN CARDS ============ */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
@@ -61,8 +61,8 @@ const CaseStudy = () => {
               </p>
             </div>
           </ScrollReveal>
-
-          <ScrollReveal direction="left">
+        
+          <ScrollReveal direction="full">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
                 src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop"
@@ -76,8 +76,8 @@ const CaseStudy = () => {
               </p>
             </div>
           </ScrollReveal>
-
-          <ScrollReveal direction="full">
+        
+          <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
                 src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop"
@@ -91,8 +91,11 @@ const CaseStudy = () => {
               </p>
             </div>
           </ScrollReveal>
-
-          <ScrollReveal direction="right">
+        </div>
+        
+        {/* ============ TWO-COLUMN CARDS ============ */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
                 src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop"
@@ -106,7 +109,7 @@ const CaseStudy = () => {
               </p>
             </div>
           </ScrollReveal>
-
+        
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
