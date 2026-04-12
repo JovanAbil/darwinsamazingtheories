@@ -77,22 +77,29 @@ Climate change is driving rapid natural selection by changing habitats, impactin
         </ScrollReveal>
 
         {/* ============ STEP 2 — IMAGE from RIGHT ============ */}
-        <ScrollReveal direction="right">
-          <div className="max-w-2xl ml-auto text-right">
-            <span className="text-primary font-bold text-sm uppercase tracking-wider">
-              Real World Example
-            </span>
+        <ScrollReveal direction="left">
+          <div className="max-w-2xl">
             <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
-              Climate change reduces snow cover duration in the Snowshoe Hare’s habitat. This causes problems as the snowshoe hares normally change from brown to white for winter camouflage. They do this in a process called molting where they shed their fur. Now that their color changing timing is shifting, hares that change color too early or stay white too long on bare ground are easily spotted by predators. Hares that can adjust their molting timing or are better suited to a less-snowy environment survive and reproduce. (Climate Adaptation Science Centers, 2016)This shows how climate change is impacting and shaping the snowshoe hares.
+              {/* EDIT: Step heading */}
+              Real World Example
             </h2>
-            {/* EDIT: Replace image */}
-            <img
-              src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=700&h=350&fit=crop"
-              alt="Green landscape planning"
-              className="rounded-lg hover-pop w-full mt-4"
-              style={{ height: "300px", objectFit: "cover" }}
-            />
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Step description */}
+              Climate change reduces snow cover duration in the Snowshoe Hare’s habitat. This causes problems as the snowshoe hares normally change from brown to white for winter camouflage. They do this in a process called molting where they shed their fur. Now that their color changing timing is shifting, hares that change color too early or stay white too long on bare ground are easily spotted by predators. Hares that can adjust their molting timing or are better suited to a less-snowy environment survive and reproduce. (Climate Adaptation Science Centers, 2016)This shows how climate change is impacting and shaping the snowshoe hares.
+            </p>
           </div>
+
+        <ScrollReveal direction="right">
+          <img
+            src="https://images.unsplash.com/photo-1698472505070-6d3b90afb530?w=800&h=400&fit=crop"
+            alt="name"
+            className="rounded-lg hover-pop w-full"
+            style={{ height: "400px", objectFit: "cover" }}
+          />
+          <p className="text-sm text-muted-foreground mt-2 italic">
+            {/* EDIT: Image caption */}
+Real World Example
+          </p>
         </ScrollReveal>
 
 
