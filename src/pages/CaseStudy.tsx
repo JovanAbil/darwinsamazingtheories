@@ -15,21 +15,18 @@ const CaseStudy = () => {
       />
       <div className="container mx-auto px-6 py-20 space-y-16">
 
-        {/* EDIT: Replace src with /images/your-file.jpg after adding to public/images/ */}
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <ScrollReveal direction="right" className="flex-1">
             <h2 className="text-2xl font-display font-bold text-foreground mb-3">
-              {/* EDIT: Your heading */}
               What is this crop?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              {/* EDIT: Your text */}
-This crop is genetically modified to express proteins from the soil bacterium Bacillus thuringiensis, which are toxic to specific pests like the European corn borer and corn rootworm. This technology allows the plant to produce its own insecticide, reducing the need for chemical sprays.
+              This crop is genetically modified to express proteins from the soil bacterium Bacillus thuringiensis, which are toxic to specific pests like the European corn borer and corn rootworm. This technology allows the plant to produce its own insecticide, reducing the need for chemical sprays.
+            </p>
           </ScrollReveal>
           <ScrollReveal direction="left" className="flex-1">
-            {/* EDIT: Replace with your image */}
             <img
-              src="https://d20knvk822eu5a.cloudfront.net/s3fs-public-optimized-mobile/2024-02/Blogposts-Landscape-in-story-Darwins-finches-1.png.webp?w=600&h=350&fit=crop"
+              src="https://d20knvk822eu5a.cloudfront.net/s3fs-public-optimized-mobile/2024-02/Blogposts-Landscape-in-story-Darwins-finches-1.png.webp"
               alt="Green leaves with morning dew"
               className="rounded-lg hover-pop w-full"
               style={{ height: "300px", objectFit: "cover" }}
@@ -43,12 +40,10 @@ This crop is genetically modified to express proteins from the soil bacterium Ba
         >
           <div className="text-center px-6">
             <h2 className="text-3xl font-display font-bold text-foreground mb-2">
-              How Bt Corn Supports Darwin’s 5 Claims
+              How Bt Corn Supports Darwin's 5 Claims
             </h2>
           </div>
         </ParallaxSection>
-          
-
 
         {/* ============ FIVE-COLUMN CARDS ============ */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -66,7 +61,7 @@ This crop is genetically modified to express proteins from the soil bacterium Ba
               </p>
             </div>
           </ScrollReveal>
-        
+
           <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
@@ -81,7 +76,7 @@ This crop is genetically modified to express proteins from the soil bacterium Ba
               </p>
             </div>
           </ScrollReveal>
-        
+
           <ScrollReveal direction="full">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
@@ -96,7 +91,7 @@ This crop is genetically modified to express proteins from the soil bacterium Ba
               </p>
             </div>
           </ScrollReveal>
-        
+
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
@@ -111,7 +106,7 @@ This crop is genetically modified to express proteins from the soil bacterium Ba
               </p>
             </div>
           </ScrollReveal>
-        
+
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
@@ -128,21 +123,6 @@ This crop is genetically modified to express proteins from the soil bacterium Ba
           </ScrollReveal>
         </div>
 
-        {/* ============ VIDEO + TEXT (uncomment to use) ============
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <ScrollReveal direction="left" className="flex-1">
-            <video src="/videos/your-video.mp4" controls className="rounded-lg w-full hover-pop" style={{ maxHeight: "350px" }}>
-              Your browser does not support the video tag.
-            </video>
-          </ScrollReveal>
-          <ScrollReveal direction="right" className="flex-1">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-3">About This Video</h2>
-            <p className="text-muted-foreground leading-relaxed">Your video description here.</p>
-          </ScrollReveal>
-        </div>
-        */}
-
-  
       </div>
     </Layout>
   );
