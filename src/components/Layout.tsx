@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import PageBottomPopup from "./PageBottomPopup";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import Footer from "./Footer";
@@ -27,6 +28,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
       <CounterDev />
       <RandomPopup />
+      <PageBottomPopup />
     </SidebarProvider>
   );
 };
