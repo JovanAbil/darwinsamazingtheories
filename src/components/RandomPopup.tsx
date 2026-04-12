@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import {
   Dialog,
   DialogContent,
@@ -11,6 +11,7 @@ import { popupMessages } from "@/data/popupMessages";
  * RANDOM POP-UP COMPONENT
  * =============================================
  * Shows a random message from popupMessages every 5–10 minutes.
+ * Never shows the same pop-up twice in a row.
  * Edit the delays below to change timing.
  * Add/remove messages in src/data/popupMessages.ts
  * =========================================== */
@@ -25,10 +26,20 @@ function getRandomDelay() {
 const RandomPopup = () => {
   const [open, setOpen] = useState(false);
   const [currentMessage, setCurrentMessage] = useState(popupMessages[0]);
+  const lastIdRef = useRef<string | null>(null);
 
   const showRandomPopup = useCallback(() => {
     if (popupMessages.length === 0) return;
-    const msg = popupMessages[Math.floor(Math.random() * popupMessages.length)];
+
+    // Pick a random message that isn't the same as the last one shown
+    let msg = popupMessages[Math.floor(Math.random() * popupMessages.length)];
+    if (popupMessages.length > 1) {
+      while (msg.id === lastIdRef.current) {
+        msg = popupMessages[Math.floor(Math.random() * popupMessages.length)];
+      }
+    }
+
+    lastIdRef.current = msg.id;
     setCurrentMessage(msg);
     setOpen(true);
   }, []);
