@@ -134,19 +134,32 @@ Darwin was able to make this claim by using his knowledge of the finch’s beak 
           </ScrollReveal>
         </div>
 
-        {/* ============ VIDEO + TEXT (uncomment to use) ============
-        <div className="flex flex-col md:flex-row gap-8 items-center">
-          <ScrollReveal direction="left" className="flex-1">
-            <video src="/videos/your-video.mp4" controls className="rounded-lg w-full hover-pop" style={{ maxHeight: "350px" }}>
-              Your browser does not support the video tag.
-            </video>
-          </ScrollReveal>
-          <ScrollReveal direction="right" className="flex-1">
-            <h2 className="text-2xl font-display font-bold text-foreground mb-3">About This Video</h2>
-            <p className="text-muted-foreground leading-relaxed">Your video description here.</p>
-          </ScrollReveal>
+        <ParallaxSection
+        imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop"
+        height="50vh"
+      >
+        <div className="text-center px-6">
+          <h2 className="text-4xl font-display font-bold text-foreground mb-4">
+           Incredible Animation Shows How Humans Evolved From Early Life
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-6">
+            Watch the video to learn more!
+          </p>
         </div>
-        */}
+      </ParallaxSection>
+        
+        <section className="py-20">
+        <ScrollReveal direction="right">
+            <iframe
+              src="https://www.youtube.com/embed/2W5hOJaFjxU"
+              title="Incredible Animation Shows How Humans Evolved From Early Life"
+              className="w-full rounded-lg hover-pop"
+              style={{ height: "400px" }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </ScrollReveal>
+        </section>
 
   
       </div>
