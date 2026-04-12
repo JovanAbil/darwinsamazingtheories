@@ -24,20 +24,54 @@ const Page5 = () => {
       />
       <div className="container mx-auto px-6 py-20 space-y-20">
 
+        <ScrollReveal direction="full">
+          <div className="bg-accent/30 border border-border rounded-xl p-8 hover-pop">
+            <h2 className="text-2xl font-display font-bold text-foreground mb-3">
+              {/* EDIT: Your heading */}
+              What does it mean?
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {/* EDIT: Your paragraph text */}
+Natural selection is a claim made by Darwin that has proven to be a fundamental mechanism of evolution where organisms better adapted to their environment tend to survive and produce more offspring. Traits that benefit the organism and allow them to survive are passed down, while those without them die. As better suited organisms survive, they reproduce more, while those that are unfit don’t reproduce because they die.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        {/* ============ ROW 1: TEXT LEFT, IMAGE RIGHT ============ */}
+        <div className="container mx-auto px-6 py-10">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
+            <ScrollReveal direction="left" className="flex-1">
+              <h2 className="text-3xl font-display font-bold text-foreground mb-4">
+                {/* EDIT: Section heading */}
+               How did Darwin make this claim?  
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                {/* EDIT: Section text */}
+Charles Darwin was able to make the claim of natural selection when he noticed how the Galapagos tortoises survived. He noticed that tortoises with longer necks were better suited for their environment because they could reach food easier and food that was out of reach for others (Hardy, n.d.). Thus, tortoises with longer necks survived while those with short necks died out. The ones with long necks reproduced and just like that Charles Darwin witnessed natural selection
+              </p>
+            </ScrollReveal>
+            <ScrollReveal direction="right" className="flex-1">
+              {/* EDIT: Replace image */}
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop"
+                alt="Sunlit forest path"
+                className="rounded-lg hover-pop w-full"
+                style={{ height: "350px", objectFit: "cover" }}
+              />
+            </ScrollReveal>
+          </div>
+        </div>
+        
         {/* ============ STEP 1 — slides from LEFT ============ */}
         <ScrollReveal direction="left">
           <div className="max-w-2xl">
-            <span className="text-primary font-bold text-sm uppercase tracking-wider">
-              {/* EDIT: Step label */}
-              Text goes here
-            </span>
             <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
               {/* EDIT: Step heading */}
-              Text goes here
+How are climate change and environmental pressures shaping species now?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {/* EDIT: Step description */}
-              Text goes here
+Climate change is driving rapid natural selection by changing habitats, impacting the organism by forcing things like physical changes and altered migration timing (Rhodes, 2025). Species adapt through genetic changes to survive the new environmental pressures they face.
             </p>
           </div>
         </ScrollReveal>
@@ -46,10 +80,10 @@ const Page5 = () => {
         <ScrollReveal direction="right">
           <div className="max-w-2xl ml-auto text-right">
             <span className="text-primary font-bold text-sm uppercase tracking-wider">
-              Text goes here
+              Real World Example
             </span>
             <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
-              Text goes here
+              Climate change reduces snow cover duration in the Snowshoe Hare’s habitat. This causes problems as the snowshoe hares normally change from brown to white for winter camouflage. They do this in a process called molting where they shed their fur. Now that their color changing timing is shifting, hares that change color too early or stay white too long on bare ground are easily spotted by predators. Hares that can adjust their molting timing or are better suited to a less-snowy environment survive and reproduce. (Climate Adaptation Science Centers, 2016)This shows how climate change is impacting and shaping the snowshoe hares.
             </h2>
             {/* EDIT: Replace image */}
             <img
@@ -61,20 +95,6 @@ const Page5 = () => {
           </div>
         </ScrollReveal>
 
-        {/* ============ STEP 3 — TEXT from LEFT ============ */}
-        <ScrollReveal direction="left">
-          <div className="max-w-2xl">
-            <span className="text-primary font-bold text-sm uppercase tracking-wider">
-              Step 3
-            </span>
-            <h2 className="text-3xl font-display font-bold text-foreground mt-1 mb-3">
-              Text goes here
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Text goes here
-            </p>
-          </div>
-        </ScrollReveal>
 
         {/* ============ STEP 4 — VIDEO from RIGHT (uncomment to use) ============
         <ScrollReveal direction="right">
