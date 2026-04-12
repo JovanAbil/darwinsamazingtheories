@@ -44,6 +44,11 @@ export const pageBottomPopups: Record<string, PopupMessage> = {
     title: "LUCA - Claim 2",
     content: `<strong>Lucas:</strong> What do you get when you have multiple LUCAs<br/><strong>Jovan:</strong> You shouldn’t because there needs to be a last one, there could’ve been a community of the same species if that is what you're referring to.<br/><strong>Lucas:</strong> No, I was going to say me because <strong>LUCAs</strong> like <em>Lucas</em>, but it's not funny anymore.<br/>`,
   },
+  "/page-4": {
+    id: "patric-joke",
+    title: "Great Reminder",
+    content: `A guy named <strong>Patric</strong> used to have an ex girlfriend named <strong>Alloa</strong>. They had to separate because Patric couldn’t get around the mountain on the way to her new house. Patric was lonely. Eventually, he found a new girl named <strong>Syma</strong>. Patric loved Syma so much that they spent all their time together and were practically isolated from the world. I was sad to see <strong>Allo(a)-patric</strong> separate, but happy for <strong>sym(a)-patric</strong> staying close together.`,
+  },
 };
 
 export const popupMessages: PopupMessage[] = [
