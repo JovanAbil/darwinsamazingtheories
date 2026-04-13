@@ -26,7 +26,7 @@ const CaseStudy = () => {
           </ScrollReveal>
           <ScrollReveal direction="left" className="flex-1">
             <img
-              src="https://d20knvk822eu5a.cloudfront.net/s3fs-public-optimized-mobile/2024-02/Blogposts-Landscape-in-story-Darwins-finches-1.png.webp"
+              src="https://cdn1.byjus.com/wp-content/uploads/2018/11/biology/2017/06/01070957/BT-CROPS.png"
               alt="Green leaves with morning dew"
               className="rounded-lg hover-pop w-full"
               style={{ height: "300px", objectFit: "cover" }}
@@ -50,7 +50,7 @@ const CaseStudy = () => {
           <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop"
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Ostrinia_nubilalis01.jpg?w=400&h=250&fit=crop"
                 alt="Bt Corn"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
@@ -65,7 +65,7 @@ const CaseStudy = () => {
           <ScrollReveal direction="full">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop"
+                src="https://vegento.russell.wisc.edu/wp-content/uploads/sites/249/2012/05/ecbLarvae.jpg?w=400&h=250&fit=crop"
                 alt="Common Ancestor"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
@@ -80,7 +80,7 @@ const CaseStudy = () => {
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop"
+                src="https://www.gardenia.net/wp-content/uploads/2010/01/shutterstock_1052168228-Optimized.jpg?w=400&h=250&fit=crop"
                 alt="Gradual Evolution"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
@@ -98,7 +98,7 @@ const CaseStudy = () => {
           <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop"
+                src="https://extension.usu.edu/vegetableguide/images/sweet-corn-pests/wcr-adult.jpg?w=400&h=250&fit=crop"
                 alt="Multiplication of Species"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
@@ -113,7 +113,7 @@ const CaseStudy = () => {
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=250&fit=crop"
+                src="https://extension.entm.purdue.edu/newsletters/pestandcrop/wp-content/uploads/sites/2/2022/07/WCRbtlesLeafAxil72.jpg?w=400&h=250&fit=crop"
                 alt="Natural Selection"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
