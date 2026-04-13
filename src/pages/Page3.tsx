@@ -54,7 +54,7 @@ Darwin was able to make this claim by using his knowledge of the finch’s beak 
             <ScrollReveal direction="right" className="flex-1">
               {/* EDIT: Replace image */}
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop"
+                src="https://mysciencesquad.weebly.com/uploads/1/1/8/3/118361154/published/adaptive-radiation-med.jpeg?w=600&h=400&fit=crop"
                 alt="Sunlit forest path"
                 className="rounded-lg hover-pop w-full"
                 style={{ height: "350px", objectFit: "cover" }}
@@ -109,7 +109,7 @@ Darwin was able to make this claim by using his knowledge of the finch’s beak 
           <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop">
               {/* EDIT: Replace image, title, description */}
-              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
+              <img src="https://www.petprofessional.com.au/wp-content/uploads/2019/12/german-shepherd-puppies.jpg?w=400&h=250&fit=crop" alt="Aerial view of forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
               <h3 className="font-display font-bold text-lg text-foreground mb-2">Dog Breeding</h3>
               <p className="text-muted-foreground text-sm">
                 Overtime dogs have changed. Today people are accustomed to dogs as cute pets, but they were once wild animals. This change is the result of people choosing to keep the harmless pet-like kind of dogs and breed them, growing their population. Today certain features in specific dogs can be seen because over time humans have bred the dogs to their liking. For example, there used to be a variety of terriers in Ireland, with different structures, colors,and coats, but gradually three main breeds evolved: the Irish, Kerry Blue and Soft Coated Wheaten terriers. These three don’t differ much in their structure but mainly show their differences in color and coats (AKC Staff, 2021). This shows how breeding over time led to a more similar structure between the dogs. This is also artificial selection because it was predetermined by humans who the dogs would breed with.
@@ -118,7 +118,7 @@ Darwin was able to make this claim by using his knowledge of the finch’s beak 
           </ScrollReveal>
           <ScrollReveal direction="full">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=250&fit=crop" alt="Waterfall in forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Pest_resistance_labelled_light.svg/1280px-Pest_resistance_labelled_light.svg.png?w=400&h=250&fit=crop" alt="Waterfall in forest" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
               <h3 className="font-display font-bold text-lg text-foreground mb-2">Pesticide Resistance</h3>
               <p className="text-muted-foreground text-sm">Insects can sometimes be annoying, thus the invention of pesticide. Pesticide is meant to kill or repel insects, however over time there are some insects and bugs that have become pesticide resistant. For example, the twospotted spider mite went after most fruits and used to be vulnerable to a pesticide called miticide. Over time, more and more mites became resistant to miticide and are now unaffected by it (Michigan State University, n.d.). This shows the gradual evolution bugs and insects can go through to become resistant to pesticides.
 </p>
@@ -126,7 +126,7 @@ Darwin was able to make this claim by using his knowledge of the finch’s beak 
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop">
-              <img src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop" alt="Close-up of green leaves" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
+              <img src="https://onlinepublichealth.gwu.edu/wp-content/uploads/sites/47/2021/03/mechanisms-of-antibiotic-resistance.png?w=400&h=250&fit=crop" alt="Close-up of green leaves" className="rounded-md w-full mb-4" style={{ height: "200px", objectFit: "cover" }} />
               <h3 className="font-display font-bold text-lg text-foreground mb-2">Antibiotic-Resistant Bacteria</h3>
               <p className="text-muted-foreground text-sm">An example used early was MRSA (Methicillin-resistant Staphylococcus aureus), a bacterium that became resistant to an antibiotic. Well this didn’t happen instantly, it took time. Methicillin was made in 1959, but staph didn’t become resistant until after a full year (MRSA Action UK, n.d.). This shows the gradual evolution staph had to undergo for eventually gaining resistance over the antibiotic.
 </p>
