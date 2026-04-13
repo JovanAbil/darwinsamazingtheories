@@ -53,7 +53,7 @@ Darwin discovered the multiplication of species primarily through his observatio
             <ScrollReveal direction="right" className="flex-1">
               {/* EDIT: Replace image */}
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop"
+                src="https://cdn.britannica.com/44/182344-050-5ECEF0AD/map-voyage-Charles-Darwin-HMS-Beagle.jpg?w=600&h=400&fit=crop"
                 alt="Sunlit forest path"
                 className="rounded-lg hover-pop w-full"
                 style={{ height: "350px", objectFit: "cover" }}
@@ -82,7 +82,7 @@ Speciation occurs today primarily through geographical isolation, which is allop
     <ScrollReveal direction="left" className="flex-1">
       <div className="bg-card rounded-lg p-5 border border-border hover-pop">
         <img
-          src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop"
+          src="https://people.com/thmb/w8hSB3_2oBAOYfVS5wD9S55PnDI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/prizzly-bears-polar-and-grizzly-5a6aee4d710b4c07a4ab8c9c69ef980d.jpg?w=400&h=250&fit=crop"
           alt="Allopatric Speciation"
           className="rounded-md w-full mb-4"
           style={{ height: "200px", objectFit: "cover" }}
@@ -112,7 +112,7 @@ Speciation occurs today primarily through geographical isolation, which is allop
     <ScrollReveal direction="right" className="flex-1">
       <div className="bg-card rounded-lg p-5 border border-border hover-pop">
         <img
-          src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Rhagoletis_pomonella.jpg?w=400&h=250&fit=crop"
           alt="Sympatric Speciation"
           className="rounded-md w-full mb-4"
           style={{ height: "200px", objectFit: "cover" }}
