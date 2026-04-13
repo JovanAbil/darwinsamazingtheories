@@ -203,7 +203,7 @@ const DomainClassification = () => {
           <ScrollReveal direction="right">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=250&fit=crop"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAx4ulMQTcIBKZCYUVBs6hcKgOy2kPXZdoQ&s?w=400&h=250&fit=crop"
                 alt="Protista"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
