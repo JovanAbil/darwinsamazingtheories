@@ -82,7 +82,7 @@ const DomainClassification = () => {
           <ScrollReveal direction="full">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=400&h=250&fit=crop"
+                src="https://bpb-us-w2.wpmucdn.com/sites.gsu.edu/dist/7/5977/files/2017/03/Pic-of-Archaea-2dtedkn-395x230.jpg?w=400&h=250&fit=crop"
                 alt="Archaea"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
@@ -182,7 +182,7 @@ const DomainClassification = () => {
           <ScrollReveal direction="left">
             <div className="bg-card rounded-lg p-5 border border-border hover-pop h-full">
               <img
-                src="https://images.unsplash.com/photo-1518173946687-a53e16966f10?w=400&h=250&fit=crop"
+                src="https://i.natgeofe.com/n/3869a86a-295b-4d64-a166-7122d9b33f3f/prod-yourshot-339782-2075670.jpg?w=400&h=250&fit=crop"
                 alt="Fungi"
                 className="rounded-md w-full mb-4"
                 style={{ height: "200px", objectFit: "cover" }}
