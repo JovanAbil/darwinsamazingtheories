@@ -69,7 +69,7 @@ Darwin found evidence for this claim when he saw that various finch species on t
             <ScrollReveal direction="left" className="flex-1">
               {/* EDIT: Replace image */}
               <img
-                src="https://www.genome.gov/sites/default/files/inline-images/DNA_sequencing2023.jpg?w=600&h=400&fit=crop"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lucy_Mexico.jpg/250px-Lucy_Mexico.jpg?w=600&h=400&fit=crop"
                 alt="Sunlit forest path"
                 className="rounded-lg hover-pop w-full"
                 style={{ height: "350px", objectFit: "cover" }}
