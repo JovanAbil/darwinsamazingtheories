@@ -53,7 +53,7 @@ Charles Darwin was able to make the claim of natural selection when he noticed h
             <ScrollReveal direction="right" className="flex-1">
               {/* EDIT: Replace image */}
               <img
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ubnWfD26QfIPaEYgT9cRg3K12ZvS7984OA&s?w=600&h=400&fit=crop"
                 alt="Sunlit forest path"
                 className="rounded-lg hover-pop w-full"
                 style={{ height: "350px", objectFit: "cover" }}
@@ -91,7 +91,7 @@ Climate change is driving rapid natural selection by changing habitats, impactin
         {/* ============ STEP 3 — IMAGE from RIGHT ============ */}
         <ScrollReveal direction="right">
           <img
-            src="https://images.unsplash.com/photo-1698472505070-6d3b90afb530?w=800&h=400&fit=crop"
+            src="https://www.nps.gov/common/uploads/stories/images/nri/20150225/articles/98A34EFF-CC5F-6626-8477281483303D92/98A34EFF-CC5F-6626-8477281483303D92.jpg?w=800&h=400&fit=crop"
             alt="Snowshoe Hare"
             className="rounded-lg hover-pop w-full"
             style={{ height: "400px", objectFit: "cover" }}
